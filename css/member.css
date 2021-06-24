@@ -1,0 +1,38 @@
+body {
+	font-family: "굴림";
+	font-size: 9pt;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	line-height: 150%;
+	margin-left: 10px;
+}
+
+	
+a:link {
+	font-family: "굴림";
+	font-size: 9pt;
+	color: #666666;
+	text-decoration: none;
+}
+a:visited {
+	font-family: "굴림";
+	font-size: 9pt;
+	color: #666666;
+	text-decoration: none;
+}
+a:hover {
+	font-family: "굴림";
+	font-size: 9pt;
+	color: #666666;
+	text-decoration: none;
+}
+a:active {
+	font-family: "굴림";
+	font-size: 9pt;
+	color: #666666;
+	text-decoration: none;
+}
+
+
