@@ -540,7 +540,7 @@ header{
 /*고객센터*/
 .notice-wrapper{
     display: inline-block;
-    padding-top: 50px 0;
+    padding-top: 50px;
 }
 #question{
     width: 70vw;
