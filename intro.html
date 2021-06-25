@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (max-width:766px)" href="./css/phone.css">
+    <link rel="stylesheet" media="screen and (min-width:767px)" href="./css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="./js/motion.js"></script>
+    <title>콜신져</title>
+
+</head>
+
+<body>
+    <!-- 메인메뉴 -->
+    <header>
+        <div class="phone-main desk-no">
+            <div class="header">
+                <div class="logo-box" id="logo-box">
+                    <a href="./index.html"><img src="./img/logo.gif" alt="logo"></a>
+                </div>
+                <div class="menu_btn"><a href="#">
+                        <img src="./img/mobile/menu.png" alt="menubtn">
+                    </a>
+                </div>
+            </div>
+
+            <div class="menu_bg"></div>
+            <div class="sidebar_menu ">
+                <div class="close_btn"><a href="#">
+                        <img src="./img/mobile/menu.png" alt="closebtn">
+                    </a>
+                </div>
+                <ul class="menu_wrap">
+                    <li><a class="m-text" href="./1-1.html">편리한 기능</a></li>
+                    <li><a class="m-text" href="./2-1.html">사용 방법</a></li>
+                        <ul>
+                            <li><a class="s-text" href="./2-1.html">무료체험 방법</a></li>
+                            <li><a class="s-text" href="./2-2.html">요금 및 할인</a></li>
+                        </ul>
+                    <li><a class="m-text" href="./3-1.html">제휴사</a></li>
+                    <li><a class="m-text" href="./4-1.html">고객센터</a></li>
+                    <li class="free"><a href="./2-1.html" class="m-text">무료체험<br>해보세요<br><p>클릭!</p></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="top mobile-no">
+            <div class="logo-box">
+                <li class="logo"><a href="./index.html"><img src="./img/logo.gif" alt="logo"></a></li>
+            </div>
+            <div class="menu-box">
+                <ul class="top">
+                    <li class="empty"></li>
+                    <li class="main-menu"><a href="./1-1.html">편리한 기능</a>
+                        <ul class="dropdown">
+                            <li><a href="./1-1.html">매출 관리</a></li>
+                            <li><a href="./1-1.html#1-2">고객 관리</a></li>
+                            <li><a href="./1-1.html#1-3">주문 관리</a></li>
+                            <li><a href="./1-1.html#1-4">매장 관리</a></li>
+                            <li><a href="./1-1.html#1-5">배달대행 연동</a></li>
+                            <li><a href="./1-1.html#1-6">포스 프로그램</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-menu bar"><a href="./2-1.html">사용 방법</a>
+                        <ul class="dropdown">
+                            <li><a href="./2-1.html">무료체험 방법</a></li>
+                            <li><a href="./2-2.html">요금 및 할인</a></li>
+                            <li><a onclick="alert('회원가입 후 이용가능합니다');" style="cursor:pointer" href="#">프로그램 설치</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-menu bar"><a href="./3-1.html">제휴사</a>
+                        <ul class="dropdown">
+                            <li><a href="./3-1.html">배달대행업체</a></li>
+                            <li><a href="./3-2.html">프렌차이즈업체</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-menu bar"><a href="./4-1.html">고객센터</a></li>
+                    <li class="main-menu free" id="free"><a href="#none"
+                        onclick="openLogin()">로그인/회원가입</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+<body>
+    <div class="wrap">
+        <div class="intro-div">
+            <div class="text-2 intro">
+                <table>
+                    <tr>
+                        <td class="title-2 m-text">" 대한민국 NO.1 고객관리 프로그램 "</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="ceo-img" src="./img/ceo-img.jpg" alt="회사소개">
+                        </td>
+                    </tr>
+                </table>
+                <table class="intro-set">
+                    <tr>
+                        <td class="point-text">
+                            CEO 인사말
+                        </td>
+                        <td class="s-text">
+                            사회가 발전할수록 생활의 각 분야는 업종별로 전문화, 세분화, 복잡화 되어 갑니다.
+                            <br>
+                            <br>
+                            이제는 대기업 못지 않게 중소 자영업자에게도 고객감동의 서비스와 차별화된 고객관리가 필수인 시대로 접어 들었습니다.
+                            <br>
+                            <br>
+                            (주)꿈과행복은 국내 400만, 세계 5억의 자영업자들에게 든든한 성공의 파트너로 성장하고 있습니다.
+                            <br>
+                            <br>
+                            구글이 검색 하나로 세계를 평정한 것 처럼 (주)꿈과행복은 콜신져로 세계를 감동시킬 것입니다.
+                            <br>
+                            <br>
+                            지난 6여년간 세계 최고의 기술개발을 이루어 냈으며 그 기술과 이념은 앞으로도 계속 진화되어 갈 것입니다.
+                            <br>
+                            <br>
+                            웹 2.0 시대를 선도하는 (주)꿈과행복과 함께 가슴 벅찬 성공을 나누시기 바랍니다.
+                            <br>
+                            <br>
+                            감사합니다.
+                            <br>
+                             <img class="sign" src="./img/sign.gif" alt="대표 사인">
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <hr style="border: 1px solid #dedede;">
+            <div class="history m-text">
+                "2001년부터 지금까지, 고객님들을 위해 <br> 콜신져가 걸어온 길입니다."
+            </div>
+
+            <div class="history-group">
+                <div class="history-info">
+                    <strong class="txt_year">2020년</strong>
+                    <div class="inner_info">
+                        <div class="txt_info">
+                            <div class="txt_num">02</div>
+                            <div class="txt_date">배달대행 "와따", "토마토통통" 연동서비스 개시</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">04</div>
+                            <div class="txt_date">배달대행 "생각대로", "배달요", "배달히어로" 연동서비스 개시</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">05</div>
+                            <div class="txt_date">배달대행 "모두의콜", "한배협:DS콜, RUN2U" 연동서비스 개시</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">06</div>
+                            <div class="txt_date">배달대행 "딜리온", "인터딜리버리" 연동서비스 개시<br>
+                                배달대행 "젠들리:칸,배고파라이더스,블랙핑크" 연동서비스 개시
+                          </div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">07</div>
+                            <div class="txt_date">배달대행 "런", "공유다", "로드파일럿", "날라가",<br>"이어드림(舊)", "제트콜ver3"
+                                연동서비스 개시<br><br>
+                                배달대행 "이즈오케이", "배달인", "레몬콜", "베테랑",<br> "엠터치", "후딱콜"
+                                연동서비스 개시<br><br>
+                                배달대행 "볼트", "나이스", "배달청이" 연동서비스 개시
+                          </div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">09</div>
+                            <div class="txt_date">배플주문 "위메프오"와 콜라보솔루션(접수+POS) 런칭서비스 개시<br>
+                                배달대행 "장군콜", "배달시대", "배고파딜리버리" 연동서비스 개시<br>
+                                배달대행 "영웅배송", "윈윈파트너“, “우리사이” 연동서비스 개시
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="history-info">
+                    <strong class="txt_year">2019년</strong>
+                    <div class="inner_info">
+                        <div class="txt_info">
+                            <div class="txt_num">01</div>
+                            <div class="txt_date">배달대행 "모아콜", "달리고", "슈퍼히어로" 연동서비스 개시</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">04</div>
+                            <div class="txt_date">배달대행 "최강배달" 연동서비스 개시</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">05</div>
+                            <div class="txt_date">배달대행 "디플러스", "해드림", "빨리와" 연동서비스 개시</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">07</div>
+                            <div class="txt_date">배달대행 "달리고V2", "슈퍼히어로V2" 연동서비스 개시</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">08</div>
+                            <div class="txt_date">배달대행 "행복배달" 연동서비스 개시</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">11</div>
+                            <div class="txt_date">배달대행 "바로고", "이어드림“, "해피콜" 연동서비스 개시</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">12</div>
+                            <div class="txt_date">주문내역과 모바일전단지 동시송출특허 우선심사요청<br>
+                                배달대행 "똑똑", "국민라이더스", "국대라이더스" 연동서비스 개시</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="history-info">
+                    <strong class="txt_year">2018년</strong>
+                    <div class="inner_info">
+                        <div class="txt_info">
+                            <div class="txt_num">11</div>
+                            <div class="txt_date">배달대행 "제트콜", "배달로" 연동서비스 개시</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">12</div>
+                            <div class="txt_date">배플주문과 배달대행 연동 동시 자동화서비스 런칭</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="history-info">
+                    <strong class="txt_year">2017년</strong>
+                    <div class="inner_info">
+                        <div class="txt_info">
+                            <div class="txt_num">07</div>
+                            <div class="txt_date">배달대행 솔루션 "배달나라Q" 런칭(부산진구서면지점 개설)
+                            </div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">12</div>
+                            <div class="txt_date">배플주문과 연동한 주문자동접수 서비스 개시 (에임넷 제휴)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="history-info">
+                    <strong class="txt_year">2016년</strong>
+                    <div class="inner_info">
+                        <div class="txt_info">
+                            <div class="txt_num">02</div>
+                            <div class="txt_date">모바일 광고되는 신개념CRM-POS “콜신져AD” 런칭</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">04</div>
+                            <div class="txt_date">모든 스마트폰이 카드단말기로 “콜신져체크기” APP런칭<br>
+         ㈜다우기술과 제휴상품 : "수기결제" + "콜신져POS연동" + "콜신져체크기앱"</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">04</div>
+                            <div class="txt_date">모든사업자에게 본사홈페이지를 제공</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">06</div>
+                            <div class="txt_date">웹포스를 이용한 주문접수 및 물품배달지원방법 특허출원<br>
+         (출원번호:10-2016-0077761), "외부배달원 호출앱(콜신져퀵맨APP)"런칭</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="history-info">
+                    <strong class="txt_year">2015년</strong>
+                    <div class="inner_info">
+                        <div class="txt_info">
+                            <div class="txt_num">02</div>
+                            <div class="txt_date"> "주문고객 대응 모바일 전단지 제공 방법" 특허 출원
+         <br>(출원번호 : 10-2015-0023355)"모바일 전단전송 및 광고플랫폼"런칭</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">03</div>
+                            <div class="txt_date">콜신져 POS "폰페이 결제" 서비스 개시</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">05</div>
+                            <div class="txt_date">콜신져 온라인 주문시스팀 (OOS), 폰페이 "빠른결제" 서비스 개시</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">06</div>
+                            <div class="txt_date">㈜다우기술 "배달365" 빠른결제와 콜신져 POS 온라인 연동 개발 제휴<br>
+         (전용 프린트 대체 기능) </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="history-info">
+                    <strong class="txt_year">2014년</strong>
+                    <div class="inner_info">
+                        <div class="txt_info">
+                            <div class="txt_num">06</div>
+                            <div class="txt_date">콜신져 메세징 서비스 개발 (2013.10 ~ 2014.06)</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">08</div>
+                            <div class="txt_date">모바일 광고 렙 ㈜애드파이어 설립</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">10</div>
+                            <div class="txt_date"> 주문 대응 모바일 광고시스템 개발<br>
+         (주)다우기술과 폰페이 (전화로) 결제 시스템 공동개발 제휴</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="history-info">
+                    <strong class="txt_year">2013년</strong>
+                    <div class="inner_info">
+                        <div class="txt_info">
+                            <div class="txt_num">07</div>
+                            <div class="txt_date">콜신져 클라우드 서비스 개시</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="history-info">
+                    <strong class="txt_year">2012년</strong>
+                    <div class="inner_info">
+                        <div class="txt_info">
+                            <div class="txt_num">06</div>
+                            <div class="txt_date">무료 홈페이지 개발 (2011.11 ~ 2012.06), 상점포탈제휴</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">12</div>
+                            <div class="txt_date">주문내역 자동 전송 시스템 개발 (2012.09 ~ 2012.12)</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="history-info">
+                    <strong class="txt_year">2011년</strong>
+                    <div class="inner_info">
+                        <div class="txt_info">
+                            <div class="txt_num">04</div>
+                            <div class="txt_date">온라인 주문 시스템 개발 ( 2010.10 ~ 2011. 04)</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">12</div>
+                            <div class="txt_date">프랜차이즈 종합관리시스템 리뉴얼 개발 ( 2011.05 ~ 2011. 11)<br>
+         프렌차이즈 온라인주문 자동 분배 시스템<br>
+         프랜차이즈 모니터링 시스템<br>
+         프랜차이즈 물류수.발주 / 배송관리 시스템</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="history-info">
+                    <strong class="txt_year">2010년</strong>
+                    <div class="inner_info">
+                        <div class="txt_info">
+                            <div class="txt_num">07</div>
+                            <div class="txt_date">(주)미디어1636 콜신져사업부문을 인수</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="history-info">
+                    <strong class="txt_year">2008년</strong>
+                    <div class="inner_info">
+                        <div class="txt_info">
+                            <div class="txt_num">01</div>
+                            <div class="txt_date">(주)꼬미커뮤니케이션에서 (주)미디어1636으로 법인명 변경</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="history-info">
+                    <strong class="txt_year">2006년</strong>
+                    <div class="inner_info">
+                        <div class="txt_info">
+                            <div class="txt_num">01</div>
+                            <div class="txt_date">홍보마당/커뮤니티오픈</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">02</div>
+                            <div class="txt_date">각종프랜차이즈대거프로그램공급계약체결</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">05</div>
+                            <div class="txt_date">원생관리프로그램서비스개시</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">06</div>
+                            <div class="txt_date">직거래장터1차오픈</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">08</div>
+                            <div class="txt_date">콜신져Web-VAN구현</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">09</div>
+                            <div class="txt_date">뷰티플러스프로그램서비스개시</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">11</div>
+                            <div class="txt_date">사용자증가로 인한 서버확충 및 국내 최고의 IDC로 이전</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="history-info">
+                    <strong class="txt_year">2005년</strong>
+                    <div class="inner_info">
+                        <div class="txt_info">
+                            <div class="txt_num">01</div>
+                            <div class="txt_date">창업박람회</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">05</div>
+                            <div class="txt_date">OK꼬미-&gt;"콜신져"새로운 개념의 신규브랜드 런칭</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">06</div>
+                            <div class="txt_date">중앙일보보도(5/16)/전국170개사업자구성</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">09</div>
+                            <div class="txt_date">서울/경기/대전/대구/부사등 전국투어사업설명회진행</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">10</div>
+                            <div class="txt_date">상담관리프로그램특허출원<br>(출원번호:10-2005-0092021)</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="history-info">
+                    <strong class="txt_year">2004년</strong>
+                    <div class="inner_info">
+                        <div class="txt_info">
+                            <div class="txt_num">05</div>
+                            <div class="txt_date">문자서비스(SMS)오픈</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">08</div>
+                            <div class="txt_date">대리점모집시작</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">09</div>
+                            <div class="txt_date">중앙서버방식자동인식과연동한주문시스템특허획득<br>(10-2002-0004639)</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">12</div>
+                            <div class="txt_date">사무실이전</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="history-info">
+                    <strong class="txt_year">2003년</strong>
+                    <div class="inner_info">
+                        <div class="txt_info">
+                            <div class="txt_num">03</div>
+                            <div class="txt_date">멀티CID지원(여러전화회선지원가능)</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">06</div>
+                            <div class="txt_date">스포츠서울IT부문보도</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">08</div>
+                            <div class="txt_date">한국경제신문IT부문보도</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">09</div>
+                            <div class="txt_date">매장매출프로그래밍 부문개발</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">10</div>
+                            <div class="txt_date">ASP서비스개시</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">11</div>
+                            <div class="txt_date">경인방송(i-TV)뉴스보도</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">12</div>
+                            <div class="txt_date">2003서울무역전시장창업박람회참가</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="history-info">
+                    <strong class="txt_year">2002년</strong>
+                    <div class="inner_info">
+                        <div class="txt_info">
+                            <div class="txt_num">01</div>
+                            <div class="txt_date">중앙서버방식자동인식과 연동한주문시스템 특허출원</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">05</div>
+                            <div class="txt_date">(주)꼬미커뮤니케이션법인설립</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">07</div>
+                            <div class="txt_date">오케이꼬미 고객관리프로그램 출시</div>
+                        </div>
+                        <div class="txt_info">
+                            <div class="txt_num">12</div>
+                            <div class="txt_date">IT부문대상수상</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="history-info">
+                    <strong class="txt_year">2001년</strong>
+                    <div class="inner_info">
+                        <div class="txt_info">
+                            <div class="txt_num">05</div>
+                            <div class="txt_date">세계 최초 웹버전자동인식과 연동한 고객관리프로그램 개발착수</div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+<!-- fixed-banner -->
+
+<aside class="mobile-no">
+    <div>
+        <table class="scroll-group" id="scroll-group">
+            <tr>
+                <td class="scroll" id="scroll0">
+                    <a href="./2-1.html">
+                        <p>무료체험<br>해보세요</p>
+                        <p>클릭!</p>
+                    </a>
+                </td>
+            </tr>
+            <table class="scroll-group">
+                <tr>
+                    <td class="scroll" id="scroll1">
+                        <a target="_blank" href="https://m.blog.naver.com/PostList.naver?blogId=okcallme_com">
+                            <img src="./img/blog.png" style="width: 35px;" alt="blog">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="scroll" id="scroll2">
+                        <a onclick="alert('회원가입 후 이용가능합니다');" style="cursor:pointer">
+                            <img src="./img/shopping.png" style="width: 35px;" alt="shop">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="scroll" id="scroll3">
+                        <a style="cursor:pointer">
+                            <img src="./img/human.png" style="width: 45px;" alt="support">
+                            <p class="point-text">?</p>
+                        </a>
+                        <table>
+                            <tr>
+                                <td class="scroll" id="hidden-scroll">
+                                    <a onclick="alert('회원가입 후 이용가능합니다');" style="cursor:pointer">
+                                        원격<br>지원
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="scroll" id="hidden-scroll1">
+                                    <a onclick="alert('회원가입 후 이용가능합니다');" style="cursor:pointer">이체<br>신청</a></td>
+                            </tr>
+                            <tr>
+                                <td class="scroll" id="hidden-scroll2">
+                                    <a onclick="alert('회원가입 후 이용가능합니다');" style="cursor:pointer">결제<br>내역</a></td>
+                            </tr>
+                            <tr>
+                                <td class="scroll" id="hidden-scroll3">
+                                    <a onclick="alert('회원가입 후 이용가능합니다');" style="cursor:pointer">입금<br>문의</a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+    </div>
+    </table>
+    </div>
+</aside>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+    function openLogin() {
+        var popup = window.open('login.html', '로그인', 'width=350px,height=350px,scrollbars=no');
+    }
+</script>
+
+    <!-- footer -->
+
+<footer id="footer">
+<div class="footer-border">
+    <ul>
+        <li><a href="javascript:window.open('http://www.okcallme.com/2007/etc/rule01.ccomi','info01','width=800,height=680,scrolling=no,left=0,top=0');">· 개인정보취급방침</a></li>
+        <li><a href="javascript:window.open('http://www.okcallme.com/2007/etc/rule02.ccomi','info01','width=800,height=680,scrolling=no,left=0,top=0');">· 이용약관</a></li>
+        <li><a href="./intro.html">· 회사소개</a></li>
+    </ul>
+</div>
+<div class="bottom-group">
+    <img src="./img/logo.gif" alt="logo">
+    <div class="explain">
+        <p>
+            (주)꿈과행복 | 대표자 이상열 | 서울시 금천구 디지털로 130 (가산동, 남성프라자 709호)<br>
+            팩스 02-2104-0489 | 웹FAX 0505-986-0489<br>
+            사업자등록번호 119-85-25957 | 통신판매업신고 제 2014-서울금천-0666호 
+        </p>
+        <hr>
+        <p class="copyright">CopyRight ⓒ2015 (주)꿈과행복 ALL RIGHT RESERVED</p>
+    </div>
+    <a onclick="alert('회원가입 후 이용가능합니다');" style="cursor:pointer" class="remoteFooter" href="">
+        원격지원 연결
+    </a>
+    <div class="banner">
+        <div>
+            <script type="text/javascript" src="https://seal.thawte.com/getthawteseal?host_name=www.okcallme.com&amp;size=L&amp;lang=ko"></script>
+            <a href="http://www.thawte.com/ssl-certificates/" target="_blank" style="color:#000000; text-decoration:none; font:bold 10px arial,sans-serif; margin:0px; padding:0px;">
+                SSL 인증서 정보
+            </a>
+        </div>
+    <img src="./img/escrowcmark.gif" alt="escrowcmark">
+    </div>
+</div>
+</footer>
+</body>
+</html>
