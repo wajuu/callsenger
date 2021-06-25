@@ -68,7 +68,7 @@ html{
     #event{
         width: 250px;
     }
-    #recom-img{
+    .recom-img{
         width: 300px;
     }
 }
@@ -100,7 +100,7 @@ body {
 .desk-no{
     display: none;
 }
-#desk-no{
+#desk-no, #desk-no1, #desk-no2{
     display: none;
 }
 .arrow{
@@ -912,7 +912,6 @@ footer .banner div{
     float: left;
 }
 footer .remoteFooter{
-    border: 0.1vw solid #448aca;
     padding:1.2vw 2.4vw;
     vertical-align: top;
     margin-top: 0.2vw;
