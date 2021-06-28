@@ -920,12 +920,15 @@ footer .bottom-group{
     margin-top: 0.8vw;
     margin-left: 1.6vw;
     width: 92.7vw;
+    text-align: left;
 }
 footer .bottom-group img{
     display: inline-block;
     vertical-align: top;
     padding-top: 0.8vw;
     width: 12vw;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
 }
 footer .bottom-group .explain{
     display: inline-block;
@@ -950,6 +953,8 @@ footer .banner div{
 }
 footer #mark{
     width: 5vw;
+    filter: none;
+    -webkit-filter: none;
 }
 footer .remoteFooter{
     padding:1.2vw 2.4vw;
