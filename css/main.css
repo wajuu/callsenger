@@ -239,23 +239,43 @@ header{
     z-index:-1;
 }
 #home-1{
-    height: 35.3vw;
+    width: 100vw;
+    height: calc(100vh - 66px);
+    position: relative;
     text-align: center;
+    z-index: 0;
+}
+#home-1::after{
+    width: 100vw;
+    height: calc(100vh - 66px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/AdobeStock_339830462.jpeg);
+    background-size: cover;
+    content: "";
+    z-index: -1;
+    opacity: 0.7;
 }
 .table1{
-    width: 80%;
-    height: 31.4vw;
-    display: inline-block;
-    text-align: center;
-    border-spacing: 1.6vw;
+    display: inline-flex;
+    width: 95vw;
+    height: calc(100vh - 66px);
+    justify-content: center;
+    align-items: center;
 }
 .hello{
-    padding-top: 1.6vw;
-    width: 40%;
-    height: 31.4vw;
+    width: 35vw;
+    height: 31.4h;
+    text-align: center;
+    padding-top: 6vh;
+}
+.hello-box{
+    margin-top: 5vh;
 }
 .hello .s-text-w{
     padding-top: 0.8vw;
+    font-size: 1.2em;
 }
 .welcome {
     color: white;
@@ -266,9 +286,9 @@ header{
 .event{
     opacity: 0.8;
     display: inline-block;
-    width: 80%;
-    margin-top: 3.9vw;
-    padding: 2.4vw 0.8vw;
+    width: 70%;
+    margin-top: 4vh;
+    padding: 2.4vh 0.5vw 2vh 0.5vw;
     background-color: white;
     border: 0.3vw dotted #448aca;
 }
@@ -276,19 +296,25 @@ header{
     transform:rotate(-10deg);
     width: 9.4vw;
     display: flex;
-    position: relative; bottom: 11.8vw; left: 3.1vw;
+    position: relative; bottom: 15vh; left: 3.1vw;
 }
 .select-menu{
-    margin-left: 3.9vw;
-    width: 90%;
-    height: 100%;
-    border-spacing: 0.6vw;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 55vh;
+    opacity: 0.9;
 }
 .select-menu td{
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
     opacity: 0.8;
-    width: 12.6vw;
-    height: 12.6vw;
+    width: 12vw;
+    height: 12vw;
     background-color: white;
+    margin: 0 1.5px;
 }
 .select-menu td:hover{
     background-color: #448aca;
@@ -900,6 +926,7 @@ footer .bottom-group img{
     display: inline-block;
     vertical-align: top;
     padding-top: 0.8vw;
+    width: 12vw;
 }
 footer .bottom-group .explain{
     display: inline-block;
@@ -921,6 +948,9 @@ footer .banner div{
     width: 6.3vw;
     text-align: center;
     float: left;
+}
+footer #mark{
+    width: 5vw;
 }
 footer .remoteFooter{
     padding:1.2vw 2.4vw;
