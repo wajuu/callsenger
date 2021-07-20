@@ -19,40 +19,6 @@ html{
     }
 }
     
-/* @media (max-width: 767px){
-
-    body{
-        font-size: 50%;
-    }
-    .logo{
-        width: 100%;
-    }
-    #free{
-        width: 150px;
-        margin-top: 10px;
-    }
-    #event{
-        width: 150px;
-    }
-    #main-3{
-        width: 100vw;
-    }
-    #main-4{
-        padding-top: 50px;
-    }
-    #functions{
-        width: 100vw;
-    }
-    #recom-img{
-        width: 250px;
-    }
-    #footer{
-        display: none;
-    }
-    .scroll-group{
-        display: none;
-    }
-} */
 
 @media (min-width: 768px) and (max-width: 1199px) {
     /* 테블릿 가로*/
@@ -95,7 +61,6 @@ body {
     z-index:1;
     width: 100vw;
     height: 92vh;
-    padding-top: 8vh;
 }
 .desk-no{
     display: none;
@@ -105,6 +70,13 @@ body {
 }
 .arrow{
     display: none;
+}
+.under-bar {
+    width: 400px;
+    border-bottom: 1px solid #777;
+    opacity: 0.8;
+    margin-bottom: 50px;
+    text-align: center;
 }
 /*text*/
 .xl-text{
@@ -135,92 +107,134 @@ body {
 }
 /*header*/
 
-header{
-    background-color: white;
-    width: 100vw;
-    height: 8vh;
+#header{
     position: fixed;
-    text-align: center;
-    top: 0;
-    z-index:2;
-    float: left;
+    width: 100vw;
+    height: 90px;
+    background-color: #fff;
+    border-bottom: 1px solid #dedede;
+    box-shadow: 0 0 5px 0 #dedede;
+    z-index: 4;
 }
-.top{
+
+.menu-list-box{
+    display: inline-flex;
+    width: 100vw;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 0.7vh 0;
-}
-.top img{
-    width: 12vw;
 }
 .logo-box{
+    display: inline-block;
+    height: 50px;
+    width: 15%;
+}
+.logo-box img{
+    height: 100%;
+}
+.nav{
+    height: 60px;
     float: left;
-    width: 15vw;
-    height: 6.5vh;
+    padding: 5px 10px;
+    margin-right: 2vw;
+    width: 65%;
+}
+.nav-login{
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    width: 10%;
+    padding: 0;
+    min-width: 140px;
 }
-.logo{
-    padding: 0.5vh 2vw;
+
+.nav .nav-list{
+    width: 100%;
+    height: 60px;
 }
-.menu-box{
-    padding: 1vh 0;
+.nav .nav-list>li{
+    height: 60px;
+    display: inline-flex;
     text-align: center;
-    float: left;
-    width: 80vw;
-    height: 7vh;
+    justify-content: center;
+    align-items: center;
 }
-.main-menu { 
-    width: 15%;
-    height: 1.6vw;
-    font-size: 1em; 
-    padding:0 0.8vw;
+.nav .nav-list>li::before{
+    content: "ㅣ";
+    color: #dedede;
+}
+.nav .nav-list>li:first-child::before{
+    content: none;
+}
+
+.nav .nav-list a{
     display: inline-block;
-} 
-.empty {
-    width: 15.7vw;
+    padding: 2px 15px;
+    font-weight: 500;
+    
 }
-.top .bar{
-    border-left: 0.1vw solid #CECCCC;
-}
-.dropdown{
-    width: 12vw;
-    background-color: white;
-    color: black;
-    z-index: 1;
-    position: absolute;
-    text-align: center;
-    margin-top: 0.4vw;
-    padding: 0.8vw 0;
-    opacity: 0;
-}
-.dropdown li {
-    padding: 0.2vw 0;
-    font-size: 0.8em;
-}
-.free {
-    margin-left: 2vw;
-    background-color: rgb(198, 227, 248);
-    padding: 1vh 0;
-    border-radius: 0.4vw;
-    font-weight: 900;
-}
-.free a {
+.nav .selected{
     color: #448aca;
 }
-.main-menu:hover>a {
+.dropdown{
+    background-color: #fff;
+    color: #000000;
+    z-index: 1;
+    text-align:start;
+    position: absolute;
+    top: 55px;
+    float: left;
+    margin-left: 15px;
+    display: none;
+}
+.first-drop{
+    margin-left: 0;
+}
+.dropdown li{
+    height: 30px;
+    display: block;
+    text-align: center;
+}
+.dropdown li a{
+    font-size: 0.9em;
+    margin: 0 auto;
+}
+
+.nav li:hover>a {
     font-weight: 700;
 }
 .main-menu:hover .dropdown{
-    opacity: 1;
+    display: block;
 }
-.free:hover a{
-    font-weight: 700;
+
+.back{
+    width: 80px;
+}
+
+#login a{
+    box-shadow: 0 0 3px #777;
+    padding: 10px 5px;
+    color: white;
+    background-color: #448aca;
+    border-radius: 5px;
+}
+
+.selected{
+    font-weight: 900;
+    color: #448aca;
+}
+.shop-submenu .selected2, .shop-submenu ul li:nth-child(n+7) .selected2{
+    background: linear-gradient(to top, #ebff37 50%, transparent 40%);
+    color: #000;
+}
+
+
+
+#container .selected:hover{
     color: white;
 }
-.top:nth-child(1-2) {
-    border-left: none;
-}
+
 
 /*main-home*/
 #background-m{
@@ -314,6 +328,9 @@ header{
     height: 12vw;
     background-color: white;
     margin: 0 1.5px;
+}
+.select-menu a{
+    text-align: center;
 }
 .select-menu td:hover{
     background-color: #448aca;
@@ -499,6 +516,13 @@ header{
     box-shadow:0 0 0.8vw #777;
 }
 /*사용방법*/
+.test-page{
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 70px;
+}
 .test-page>.l-text{
     padding: 70px 0 40px 0;
 }
@@ -538,33 +562,107 @@ header{
 .sale>.s-text{
     margin-bottom: 20px;
 }
-.sale-info{
-    display: inline-block;
-    border: 3px dotted #448aca;
-    background-color: #dedede;
-    width: 50vw;
-    margin-bottom: 70px;
+
+.sale-info img{
+    width: 500px;
+    height: auto;
+    box-shadow: 2px 2px 7px #777;
+    margin-bottom: 50px;
 }
-.sale-info .point-text{
-    padding: 20px 0;
+.test-page .menu3{
+    padding-top: 70px;
 }
-.sale-info .s-text{
-    padding: 5px 0;
-    margin-bottom: 15px;
+.menu3 .l-text{
+    padding-bottom: 50px;
 }
 
 /*제휴사*/
-.menu3 .l-text{
-    padding: 70px 0 50px 0;
+.delivery .point-text{
+    font-weight: 500;
 }
-.menu3 img{
-    width: 45%;
-    padding-bottom: 3.9vw;
+.delivery-img{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
 }
-.under-bar{
-    width: 20%; height: 0.4vw; border-bottom: 0.1vw solid #c6c6c6;
-    display: inline-block;
-    margin-bottom: 2.4vw;
+
+.delivery-img img{
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    box-shadow: 0 0 10px #424242;
+    border-radius: 25px;
+}
+.text-arrow img{
+    width: 50px;
+    height: auto;
+    padding: 40px 0;
+}
+.text-logo p{
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    font-size: 1.8em;
+    font-weight: 900;
+    box-shadow: 0 0 10px #424242;
+    border-radius: 100px;
+}
+
+
+.delivery-b1, .delivery-b2{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+.delivery-b1 .delivery-img{
+    width: 20%;
+    padding: 0;
+}
+.delivery-b1 .delivery-img img{
+    width: 70px;
+}
+.delivery-b1 .text-arrow{
+    width: 5%;
+}
+.delivery-b1 .text-arrow img{
+    transform: rotate(-90deg);
+}
+.delivery-b1 .text-logo{
+    width: 15%;
+}
+.delivery-b1 .text-logo p{
+    width: 120px;
+    height: 120px;
+}
+.delivery-b1 .delivery-com{
+    text-align: center;
+    width: 25%;
+}
+.delivery-b1 .delivery-com img{
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    box-shadow: 0 0 10px #424242;
+    border-radius: 15px;
+}
+.delivery-b2{
+    width: 100%;
+    padding-top: 20px;
+}
+.delivery-b2 .detail{
+    width:40%;
+}
+.delivery-b2 .point-text{
+    font-weight: 700;
+}
+.delivery-b2 .list{
+    width: 50vw;
 }
 
 /*고객센터*/
@@ -884,12 +982,7 @@ header{
 .rest{
     padding-top: 0.4vw;
 }
-.back{
-    position: fixed;
-    top: 7vh;
-    right: 11vw;
-    z-index: 2;
-}
+
 
 
 /* footer */
