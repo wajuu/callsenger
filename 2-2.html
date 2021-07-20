@@ -8,6 +8,7 @@
         <link rel="stylesheet" media="screen and (min-width:767px)" href="./css/main.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script src="./js/motion.js"></script>
+        <script src="https://kit.fontawesome.com/115e3e852e.js" crossorigin="anonymous"></script>
         <title>콜신져</title>
     
     </head>
@@ -15,13 +16,13 @@
     <body>
         <!-- 메인메뉴 -->
         <header>
-            <div class="phone-main desk-no">
+            <div class="phone-main desk-no" id="desk-no2">
                 <div class="header">
                     <div class="logo-box" id="logo-box">
                         <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
                     </div>
                     <div class="menu_btn"><a href="#">
-                            <img src="./img/mobile/menu.png" alt="menubtn">
+                            <img src="./img/mobile/menu.png" alt="menu">
                         </a>
                     </div>
                 </div>
@@ -29,7 +30,7 @@
                 <div class="menu_bg"></div>
                 <div class="sidebar_menu ">
                     <div class="close_btn"><a href="#">
-                            <img src="./img/mobile/close.png" alt="closebtn">
+                            <img src="./img/mobile/close.png" alt="menu">
                         </a>
                     </div>
                     <ul class="menu_wrap">
@@ -40,22 +41,26 @@
                                 <li><a class="s-text" href="./2-2.html">요금 및 할인</a></li>
                             </ul>
                         </li>
-                        <li><a class="m-text" href="./3-1.html">제휴사</a></li>
+    
+                        <li><a class="m-text" href="./3-1.html">배달/주문 연동</a></li>
                         <li><a class="m-text" href="./4-1.html">고객센터</a></li>
-                        <li class="free"><a href="./2-1.html" class="m-text">무료체험<br>해보세요<br><p>클릭!</p></a></li>
+                        <li class="free"><a href="./2-1.html" class="m-text">무료체험<br>해보세요<br>
+                                <p>클릭!</p>
+                            </a></li>
                     </ul>
                 </div>
             </div>
     
-            <div class="top mobile-no">
+        
+            <div class="menu-list-box mobile-no">
                 <div class="logo-box">
-                    <a class="logo" href="./index.html"><img src="./img/logo.png" alt="logo"></a>
+                    <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
                 </div>
-                <div class="menu-box">
-                    <ul class="top">
-                        <li class="empty"></li>
+                <!-- 메인메뉴 -->
+                <div class="nav">
+                    <ul class="nav-list s-text">
                         <li class="main-menu"><a href="./1-1.html">편리한 기능</a>
-                            <ul class="dropdown">
+                            <ul class="dropdown first-drop">
                                 <li><a href="./1-1.html">매출 관리</a></li>
                                 <li><a href="./1-1.html#1-2">고객 관리</a></li>
                                 <li><a href="./1-1.html#1-3">주문 관리</a></li>
@@ -64,22 +69,33 @@
                                 <li><a href="./1-1.html#1-6">포스 프로그램</a></li>
                             </ul>
                         </li>
-                        <li class="main-menu bar"><a href="./2-1.html">사용 방법</a>
+                        <li class="main-menu"><a class="selected" href="./2-1.html">사용방법</a>
                             <ul class="dropdown">
                                 <li><a href="./2-1.html">무료체험 방법</a></li>
                                 <li><a href="./2-2.html">요금 및 할인</a></li>
                                 <li><a onclick="alert('회원가입 후 이용가능합니다');" style="cursor:pointer" href="#">프로그램 설치</a></li>
                             </ul>
                         </li>
-                        <li class="main-menu bar"><a href="./3-1.html">제휴사</a>
+                        <li class="main-menu"><a href="./3-1.html">배달/주문 연동</a>
                             <ul class="dropdown">
-                                <li><a href="./3-1.html">배달대행업체</a></li>
-                                <li><a href="./3-2.html">프렌차이즈업체</a></li>
+                                <li><a class="s-text" href="./3-1.html">배달앱/주문대행</a></li>
+                                <li><a class="s-text" href="./3-3.html">배달 공공앱</a></li>
+                                <li><a class="s-text" href="./3-2.html">프랜차이즈 제휴사</a></li>
                             </ul>
                         </li>
-                        <li class="main-menu bar"><a href="./4-1.html">고객센터</a></li>
-                        <li class="main-menu free" id="free"><a href="#none"
-                            onclick="openLogin()">로그인/회원가입</a></li>
+                        <li class="main-menu"><a href="./4-1.html">고객센터</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li class="back"><a href="#" onclick="window.history.back(-1)"><i class="fas fa-undo"></i>뒤로가기</a></li>
+                    </ul>
+                </div>
+                <div class="nav nav-login">
+                    <ul>
+                        <li id="login">
+                            <a href="#none" onclick="openLogin()">로그인/회원가입</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -87,42 +103,25 @@
         
         <div class="test-page sale">
             <div class="l-text">매월 사용료와 우대 혜택</div>
-            <div class="under-bar"></div>
+            <hr class="under-bar">
             <div class="point-text">프로그램 월 사용료 15,000원(VAT별도)</div>
             <div class="s-text">
-                - 자동이체, 콜신져 쇼핑몰에서 결제(카드/가상계좌), 무통장 입금
+                자동이체, 콜신져 쇼핑몰에서 결제(카드/가상계좌), 무통장 입금
             </div>
             <br>
-            <div class="point-text">배민, 요기요, 쿠팡 등 주문 앱 및 50여개 배달대행 <br> 자동연동 사용료 10,000원 (선택사항)
-            </div>
+            <div class="point-text">배민, 요기요, 쿠팡 등 주문 앱 및 50여개 배달대행</div>
+                
+            <div class="s-text">자동연동 사용료 10,000원 (선택사항)</div>
             <br>
 
             <div class="sale-info">
-                <div class="point-text">[할인 혜택]</div>
-                <div class="detail">
-                    <p class="s-text">
-                        사용자 1명 추천 후 첫 결제시 1개월 무료 사용권 제공(15,000마일리지)<br><br>
-                        사용자 2명 추천 후 각 6개월 결제시 12개월 무료사용권 제공<br><br>
-                        1년분 일시불 결제시 2개월 할인(198,000원 -> 165,000원)
-                    </p>
-                </div>
-           
-                <div class="point-text">[홈페이지 및 홍보 전단지 신청가능]</div>
-                 <div class="detail">
-                <p class="s-text">
-                    사용업소 전용 개별 홈페이지 및 홍보 전단지 제공 (빌드형)<br><br>
-                    사용업소 전용 온라인 주문페이지 제공 (빌드형)
-                </p>
-                </div>
+                <img src="./img/discount-info.gif" alt="">
             </div>
         </div>
           <!-- fixed-banner -->
 
           <div class="mobile-no">
-            <div class="back">
-                <a href="./index.html">
-                    <img style="width: 1.5vw;" src="./img/undo.png" alt="back"> 뒤로가기</a>
-            </div>
+
             <div class="sale-banner">
                 <img src="./img/events.png" alt="event">
                 <div class="point-text event" id="event">1년에 2-3명만 추천하면<br>평생 무료 사용도 가능!!</div>
@@ -233,7 +232,7 @@
                     SSL 인증서 정보
                 </a>
             </div>
-            <img id='mark' src="./img/escrowcmark.gif" alt="excrowcmark">
+            <img id="mark" src="./img/escrowcmark.gif" alt="excrowcmark">
         </div>
     </div>
 </footer>

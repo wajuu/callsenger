@@ -8,6 +8,7 @@
     <link rel="stylesheet" media="screen and (min-width:767px)" href="./css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="./js/motion.js"></script>
+    <script src="https://kit.fontawesome.com/115e3e852e.js" crossorigin="anonymous"></script>
     <title>콜신져</title>
 
 </head>
@@ -15,13 +16,13 @@
 <body>
     <!-- 메인메뉴 -->
     <header>
-        <div class="phone-main desk-no">
+        <div class="phone-main desk-no" id="desk-no2">
             <div class="header">
                 <div class="logo-box" id="logo-box">
                     <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
                 </div>
                 <div class="menu_btn"><a href="#">
-                        <img src="./img/mobile/menu.png" alt="menubtn">
+                        <img src="./img/mobile/menu.png" alt="menu">
                     </a>
                 </div>
             </div>
@@ -29,7 +30,7 @@
             <div class="menu_bg"></div>
             <div class="sidebar_menu ">
                 <div class="close_btn"><a href="#">
-                        <img src="./img/mobile/close.png" alt="closebtn">
+                        <img src="./img/mobile/close.png" alt="menu">
                     </a>
                 </div>
                 <ul class="menu_wrap">
@@ -38,23 +39,28 @@
                         <ul>
                             <li><a class="s-text" href="./2-1.html">무료체험 방법</a></li>
                             <li><a class="s-text" href="./2-2.html">요금 및 할인</a></li>
-                        </ul></li>
-                    <li><a class="m-text" href="./3-1.html">제휴사</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a class="m-text" href="./3-1.html">배달/주문 연동</a></li>
                     <li><a class="m-text" href="./4-1.html">고객센터</a></li>
-                    <li class="free"><a href="./2-1.html" class="m-text">무료체험<br>해보세요<br><p>클릭!</p></a></li>
+                    <li class="free"><a href="./2-1.html" class="m-text">무료체험<br>해보세요<br>
+                            <p>클릭!</p>
+                        </a></li>
                 </ul>
             </div>
         </div>
 
-        <div class="top mobile-no">
+    
+        <div class="menu-list-box mobile-no">
             <div class="logo-box">
-                <a class="logo" href="./index.html"><img src="./img/logo.png" alt="logo"></a>
+                <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
             </div>
-            <div class="menu-box">
-                <ul class="top">
-                    <li class="empty"></li>
+            <!-- 메인메뉴 -->
+            <div class="nav">
+                <ul class="nav-list s-text">
                     <li class="main-menu"><a href="./1-1.html">편리한 기능</a>
-                        <ul class="dropdown">
+                        <ul class="dropdown first-drop">
                             <li><a href="./1-1.html">매출 관리</a></li>
                             <li><a href="./1-1.html#1-2">고객 관리</a></li>
                             <li><a href="./1-1.html#1-3">주문 관리</a></li>
@@ -63,22 +69,33 @@
                             <li><a href="./1-1.html#1-6">포스 프로그램</a></li>
                         </ul>
                     </li>
-                    <li class="main-menu bar"><a href="./2-1.html">사용 방법</a>
+                    <li class="main-menu"><a href="./2-1.html">사용방법</a>
                         <ul class="dropdown">
                             <li><a href="./2-1.html">무료체험 방법</a></li>
                             <li><a href="./2-2.html">요금 및 할인</a></li>
                             <li><a onclick="alert('회원가입 후 이용가능합니다');" style="cursor:pointer" href="#">프로그램 설치</a></li>
                         </ul>
                     </li>
-                    <li class="main-menu bar"><a href="./3-1.html">제휴사</a>
+                    <li class="main-menu"><a href="./3-1.html">배달/주문 연동</a>
                         <ul class="dropdown">
-                            <li><a href="./3-1.html">배달대행업체</a></li>
-                            <li><a href="./3-2.html">프렌차이즈업체</a></li>
+                            <li><a class="s-text" href="./3-1.html">배달앱/주문대행</a></li>
+                            <li><a class="s-text" href="./3-3.html">배달 공공앱</a></li>
+                            <li><a class="s-text" href="./3-2.html">프랜차이즈 제휴사</a></li>
                         </ul>
                     </li>
-                    <li class="main-menu bar"><a href="./4-1.html">고객센터</a></li>
-                    <li class="main-menu free" id="free"><a href="#none"
-                        onclick="openLogin()">로그인/회원가입</a></li>
+                    <li class="main-menu"><a href="./4-1.html">고객센터</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="back"><a href="#" onclick="window.history.back(-1)"><i class="fas fa-undo"></i>뒤로가기</a></li>
+                </ul>
+            </div>
+            <div class="nav nav-login">
+                <ul>
+                    <li id="login">
+                        <a href="#none" onclick="openLogin()">로그인/회원가입</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -620,7 +637,7 @@
                 SSL 인증서 정보
             </a>
         </div>
-    <img id='mark' src="./img/escrowcmark.gif" alt="escrowcmark">
+    <img  id="mark"src="./img/escrowcmark.gif" alt="escrowcmark">
     </div>
 </div>
 </footer>

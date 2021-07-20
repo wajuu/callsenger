@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+    <meta name="keywords" content="콜신져, 고객관리, pos, 포스, 포스프로그램, 마스터, 뷰티, 뷰티플러스, 상담관리, 콜센터, 배달, 음식점, 매장, 꿈과행복, 배달대행, 포스피드, cid, 콜스타, 부르미, 창업">
+    <title>콜신져 고객관리프로그램 대표브랜드</title>
+    <link href="./css/member.css" rel="stylesheet" type="text/css">
+    <link href="./css/table.css" rel="stylesheet" type="text/css">
+    <script src="./js/AC_RunActiveContent.js" type="text/javascript"></script>
+    <script type="text/JavaScript">
+    <!--
+    function MM_openBrWindow(theURL,winName,features) { //v2.0
+      window.open(theURL,winName,features);
+    }
+    function MM_preloadImages() { //v3.0
+      var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+        var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+        if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+    }
+    
+    function MM_findObj(n, d) { //v4.01
+      var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+        d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+      if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+      for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+      if(!x && d.getElementById) x=d.getElementById(n); return x;
+    }
+    
+    function MM_nbGroup(event, grpName) { //v6.0
+      var i,img,nbArr,args=MM_nbGroup.arguments;
+      if (event == "init" && args.length > 2) {
+        if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+          img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+          if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+          nbArr[nbArr.length] = img;
+          for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+            if (!img.MM_up) img.MM_up = img.src;
+            img.src = img.MM_dn = args[i+1];
+            nbArr[nbArr.length] = img;
+        } }
+      } else if (event == "over") {
+        document.MM_nbOver = nbArr = new Array();
+        for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+          if (!img.MM_up) img.MM_up = img.src;
+          img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+          nbArr[nbArr.length] = img;
+        }
+      } else if (event == "out" ) {
+        for (i=0; i < document.MM_nbOver.length; i++) {
+          img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+      } else if (event == "down") {
+        nbArr = document[grpName];
+        if (nbArr)
+          for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+        document[grpName] = nbArr = new Array();
+        for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+          if (!img.MM_up) img.MM_up = img.src;
+          img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+          nbArr[nbArr.length] = img;
+      } }
+    }
+    
+    
+    function func_chklogin()
+    {
+      document.pageInfo.submit();
+    }
+    
+    //-->
+    </script>
+    
+    </head>
+    <body topmargin="20" bottommargin="0" leftmargin="0" rightmargin="0"><form name="pageInfo" method="post" action="/2007/login/login.ccomi">
+      <input type="hidden" name="REF_URL" value="@/2007/member/member02.ccomi?IsDelivery=&amp;rdoagree=Y&amp;rdoagree2=Y&amp;rdoagree3=Y@">
+      </form>
+      
+      <link href="/2007/css/table.css" rel="stylesheet" type="text/css">
+      
+      
+       
+      <script language="javascript">
+      
+        //alert("잘못된 경로입니다(url).정확한 경로를 통하여\n\n회원가입을 해주시기 바랍니다");
+        //location.replace("http://sang.okcallme.com");
+      
+      </script>
+      
+      <script language="javascript">
+      
+        //alert("잘못된 경로입니다.정확한 경로를 통하여\n\n회원가입을 해주시기 바랍니다");
+        //location.replace("http://sang.okcallme.com");
+        function checkSpecial()
+        {
+          var objEv = event.srcElement;
+          var num ="{}[]()<>?_|~`!@#$%^&*-+\"'\\/ ";    //입력을 막을 특수문자 기재.
+          event.returnValue = true;
+          
+           for (var i=0;i<objEv.value.length;i++)
+           {
+           if(-1 != num.indexOf(objEv.value.charAt(i)))
+           event.returnValue = false;
+           }
+            
+           if (!event.returnValue)
+           {
+            alert("특수문자는 입력하실 수 없습니다.");
+            objEv.value="";
+           }
+        }
+      
+      </script>
+      
+      
+      
+      <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+      
+      
+       <table border="0" cellspacing="0" cellpadding="0" align="center">
+      <form name="frmJoin" method="post" style="padding:0;margin:0"></form>
+      <input type="hidden" name="email_part" value="AUTO">
+      <input type="hidden" name="chkID" value="N">
+      <input type="hidden" name="IsDelivery" value="">
+      <input type="hidden" name="IsEvent" value="Y">
+      
+        
+        <tbody><tr>
+          <td width="1"></td>
+          <td width="768"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tbody><tr>
+              <td height="100">
+                
+                <a href="http://www.okcallme.com/2007/"><img src="./img/logo.png" border="0">
+                
+              </a></td>
+              
+              <td valign="bottom" align="right"><img src="./img/nonpage_02.jpg" width="115" height="17" border="0" usemap="#Map"></td>
+              
+            </tr>
+          </tbody></table></td>
+          <td width="1"></td>
+        </tr>
+        
+        
+        <tr>
+          <td colspan="3"><img src="./img/member01.gif" width="770" height="30"></td>
+        </tr>
+        <tr>
+          <td height="500" bgcolor="#99D5F9"></td>
+          <td width="768" height="500" valign="top"><table width="768" border="0" cellspacing="0" cellpadding="0">
+            <tbody><tr>
+              <td width="50" height="32"></td>
+              <td width="668" height="32"></td>
+              <td width="50" height="32"></td>
+            </tr>
+            <tr>
+              <td width="50" height="24"></td>
+              <td width="668" height="24"><img src="./img/member02_01.jpg" width="119" height="21"></td>
+              <td width="50" height="24"></td>
+            </tr>
+            <tr>
+              <td width="50" height="6"></td>
+              <td width="668" height="6">회원가입시 기본정보를 정확하게 입력하여 주시면 본인확인 및 서비스 이용시 편리하게 이용하실 수 있습니다.<br>
+                (주)꿈과행복에서는 회원님의 정보를 철저한 보안으로 안전하게 보호하고 있습니다.<br>
+                자세한 내용은 <font color="0076be"><b>개인정보취급방침</b></font>을 확인하여 주십시요.</td>
+              <td width="50" height="6"></td>
+            </tr>
+            <tr>
+              <td width="50" height="15"></td>
+              <td width="668" height="15"></td>
+              <td width="50" height="15"></td>
+            </tr>
+            <tr>
+              <td width="50" height="22"></td>
+              <td height="22">(<font color="f36d21">*</font>)표시는 <font color="f36d21">필수입력 사항입니다.</font></td>
+              <td width="50" height="22"></td>
+            </tr>
+            <tr>
+              <td width="50" height="22"></td>
+              <td width="668" height="22"><table width="668" border="0" cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                  <td width="15" height="2" bgcolor="D6D6D6"></td>
+                  <td height="2" bgcolor="D6D6D6"></td>
+                  <td height="2" bgcolor="D6D6D6"></td>
+                  <td height="2" bgcolor="D6D6D6"></td>
+                </tr>
+                <tr>
+                  <td width="15" height="39" bgcolor="F6F6F8"></td>
+                  <td height="39" bgcolor="F6F6F8">이름<font color="f36d21">*</font></td>
+                  <td height="39"></td>
+                  <td height="39"><input type="text" maxlength="10" size="10" name="txtName"></td>
+                </tr>
+                <tr>
+                  <td height="1" colspan="4" background="/2007/images/longline.gif" bgcolor="F6F6F8"></td>
+                  </tr>
+                <tr>
+                  <td width="15" height="80" rowspan="2" bgcolor="F6F6F8"></td>
+                  <td width="126" height="80" rowspan="2" bgcolor="F6F6F8">아이디<font color="f36d21">*</font></td>
+                  <td width="15" height="80" rowspan="2"></td>
+                  <td height="39"><table border="0" cellspacing="0" cellpadding="0">
+                      <tbody><tr>
+                        <td><input type="text" maxlength="12" size="10" name="txtID" onkeypress="javascript: frmJoin.chkID.value='N';" onkeyup="checkSpecial();"></td>
+                        <td width="7">&nbsp;</td>
+                        <td valign="middle"> <a href="javascript: chkID();"><img src="./img/member02_bt3.jpg" width="52" height="18" border="0"></a></td>
+                      </tr>
+                    </tbody></table></td>
+                </tr>
+                <tr>
+                  <td height="39">6-12자 영문 소문자, 숫자와 특수기호(_)만 사용할 수 있습니다.<br>
+      가입후 아이디는 변경불가 입니다. 아이디 선택시 신중을 기해 주십시요. </td>
+                </tr>
+                <tr>
+                  <td height="1" colspan="4" background="/2007/images/longline.gif" bgcolor="F6F6F8"></td>
+                </tr>
+                <tr>
+                  <td width="15" height="39" bgcolor="F6F6F8"></td>
+                  <td width="126" height="39" bgcolor="F6F6F8">비밀번호<font color="f36d21">*</font></td>
+                  <td width="15" height="39"></td>
+                  <td height="39"><input maxlength="10" size="10" name="txtPassword" type="password" onkeyup="checkSpecial();">
+          <font color="red">안전한 비밀번호 작성규칙을 준수해주세요.</font><font color="555555"> &nbsp; <br>비밀번호는 최소 8-10자리 이상 되어야하고
+      문자, 숫자, 영문, 특수문자등이 포함되어야합니다.</font>
+      </td>
+                </tr>
+                <tr>
+                  <td height="1" colspan="4" background="/2007/images/longline.gif" bgcolor="F6F6F8"></td>
+                </tr>
+                <tr>
+                  <td width="15" height="80" bgcolor="F6F6F8"></td>
+                  <td width="126" height="80" bgcolor="F6F6F8">비밀번호 확인<font color="f36d21">*</font></td>
+                  <td width="15" height="80"></td>
+                  <td height="80"><input maxlength="10" size="10" name="txtConfirm" type="password">
+                    <br>
+                    비밀번호를 한번 더 입력하세요.<br>
+                    비밀번호를 잊지 않도록 주의하시기 바랍니다.</td>
+                </tr>
+                <tr>
+                  <td height="1" colspan="4" background="/2007/images/longline.gif" bgcolor="F6F6F8"></td>
+                </tr>
+                <tr>
+                  <td height="64" bgcolor="F6F6F8"></td>
+                  <td height="64" bgcolor="F6F6F8">비밀번호 재발급<br>
+      질문 선택 <font color="f36d21">*</font></td>
+                  <td height="64"></td>
+                  <td height="64">
+                    <select name="txtPasskey" style="width:289px;" class="TEXTAREA">
+                     <option value="">질문을 선택하세요.</option>
+                    
+                     <option value="나의 고향은?"> 나의 고향은? </option>
+                  
+                              <option value="타인이 모르는 자신만의 신체비밀이 있다면?"> 타인이 모르는 자신만의 신체비밀이 있다면? </option>
+                  
+                              <option value="자신의 인생 좌우명은?"> 자신의 인생 좌우명은? </option>
+                  
+                              <option value="유년시절 가장 생각나는 친구 이름은?"> 유년시절 가장 생각나는 친구 이름은? </option>
+                  
+                              <option value="가장 기억에 남는 선생님 성함은?"> 가장 기억에 남는 선생님 성함은? </option>
+                  
+                              <option value="친구들에게 공개하지 않은 어릴 적 별명이 있다면?"> 친구들에게 공개하지 않은 어릴 적 별명이 있다면? </option>
+                  
+                              <option value="추억하고 싶은 날짜가 있다면?(예:1994/04/20)"> 추억하고 싶은 날짜가 있다면?(예:1994/04/20) </option>
+                  
+                              <option value="다시 태어나면 되고 싶은 것은?"> 다시 태어나면 되고 싶은 것은? </option>
+                  
+                              <option value="가장 감명깊게 본 영화는?"> 가장 감명깊게 본 영화는? </option>
+                  
+                              <option value="읽은 책 중에서 좋아하는 구절이 있다면?"> 읽은 책 중에서 좋아하는 구절이 있다면? </option>
+                  
+                              <option value="기억에 남는 추억의 장소는?"> 기억에 남는 추억의 장소는? </option>
+                  
+                              <option value="인상 깊게 읽은 책 이름은?"> 인상 깊게 읽은 책 이름은? </option>
+                  
+                              <option value="자신의 보물 제1호는?"> 자신의 보물 제1호는? </option>
+                  
+                              <option value="받았던 선물 중 기억에 남는 독특한 선물은?"> 받았던 선물 중 기억에 남는 독특한 선물은? </option>
+                  
+                              <option value="자신이 가장 존경하는 인물은?"> 자신이 가장 존경하는 인물은? </option>
+                  
+                              <option value="아버지의 성함은?"> 아버지의 성함은? </option>
+                  
+                              <option value="가장 여행하고 싶은 나라는?"> 가장 여행하고 싶은 나라는? </option>
+                  
+                              <option value="어머니의 성함은?"> 어머니의 성함은? </option>
+                  
+                              <option value="좋아하는 색깔은?"> 좋아하는 색깔은? </option>
+      
+                     <option value="콜신져 회원가입한 날은?"> 콜신져 회원가입한 날은? </option>
+                  
+                   </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td height="1" colspan="4" background="/2007/images/longline.gif" bgcolor="F6F6F8"></td>
+                </tr>
+                <tr>
+                  <td width="15" height="46" bgcolor="F6F6F8"></td>
+                  <td width="126" height="46" bgcolor="F6F6F8">비밀번호 재발급<br>
+                    답 입력<font color="f36d21">*</font></td>
+                  <td width="15" height="46"></td>
+                  <td height="46"><input maxlength="50" size="10" name="txtPasschk" type="text"></td>
+                </tr>
+                <tr>
+                  <td width="15" height="34" bgcolor="F6F6F8"></td>
+                  <td width="126" height="34" bgcolor="F6F6F8"></td>
+                  <td width="15" height="34"></td>
+                  <td height="34">위에서 선택한 질문의 답을 입력하세요. 비밀번호를 잊은 경우 이 답을 반드시 입력해야 하므로 잘 기억하시기 바랍니다. </td>
+                </tr>
+                <tr>
+                  <td height="1" colspan="4" background="/2007/images/longline.gif" bgcolor="F6F6F8"></td>
+                </tr>
+                <tr>
+                  <td width="15" height="46" bgcolor="F6F6F8"></td>
+                  <td width="126" height="46" bgcolor="F6F6F8">주로사용하는<br>
+                    이메일 주소 입력<font color="f36d21">*</font></td>
+                  <td width="15" height="46"></td>
+                  <td height="46">
+                  
+                  
+                      <table border="0" cellpadding="0" cellspacing="0">
+                      <tbody><tr>
+                        <td><input type="text" maxlength="50" size="20" name="txtEmail" onkeyup="email_char();"></td>
+                        <td width="5"><div id="dEmail">@</div></td>
+                        <td>
+                              <select class="TEXTAREA" onchange="selMail();" name="selDomain">
+                    <option value="@hanmail.net">hanmail.net</option> 
+                  <option value="@naver.com">naver.com</option>	
+                  <option value="@empal.com">empal.com</option> 					  
+                  <option value="@nate.com">nate.com</option>
+                  <option value="@unitel.co.kr">unitel.co.kr</option>
+                    <option value="@dreamwiz.com">dreamwiz.com</option>
+                    <option value="@gmail.com">gmail.com</option>
+                    <option value="@yahoo.co.kr">yahoo.co.kr</option>
+                    <option value="@hotmail.com">hotmail.com</option>
+                    <option value="X">직접 입력</option>
+                              </select>              
+                         </td>
+                      </tr>
+                      </tbody></table>  
+                      
+                </td>
+                </tr>
+                <tr>
+                  <td height="1" colspan="4" background="/2007/images/longline.gif" bgcolor="F6F6F8"></td>
+                </tr>
+                <tr>
+                  <td width="15" height="39" bgcolor="F6F6F8"></td>
+                  <td width="126" height="39" bgcolor="F6F6F8">전화번호<font color="f36d21">*</font></td>
+                  <td width="15" height="39"></td>
+                  <td height="39">
+                   <input class="font_01" maxlength="3" size="10" name="txtTel1" type="text" onkeypress="javascript: onlyNumber();">
+                              - 
+                              <input class="font_01" maxlength="4" size="10" name="txtTel2" type="text" onkeypress="javascript: onlyNumber();">
+                              - 
+                              <input class="font_01" maxlength="4" size="10" name="txtTel3" type="text" onkeypress="javascript: onlyNumber();">  
+                  </td>
+                </tr>
+                <tr>
+                  <td height="1" colspan="4" background="/2007/images/longline.gif" bgcolor="F6F6F8"></td>
+                </tr>
+                <tr>
+                  <td width="15" height="39" bgcolor="F6F6F8"></td>
+                  <td width="126" height="39" bgcolor="F6F6F8">휴대폰<font color="f36d21">*</font></td>
+                  <td width="15" height="39"></td>
+                  <td height="39">
+                    <input class="font_01" maxlength="3" size="10" name="txtHP1" type="text" onkeypress="javascript: onlyNumber();">
+                              - 
+                              <input class="font_01" maxlength="4" size="10" name="txtHP2" type="text" onkeypress="javascript: onlyNumber();">
+                              - 
+                              <input class="font_01" maxlength="4" size="10" name="txtHP3" type="text" onkeypress="javascript: onlyNumber();">
+                  </td>
+                </tr>
+                <tr>
+                  <td height="1" colspan="4" background="/2007/images/longline.gif" bgcolor="F6F6F8"></td>
+                </tr>
+                <tr>
+                  <td width="15" height="39" bgcolor="F6F6F8"></td>
+                  <td width="126" height="39" bgcolor="F6F6F8">상호</td>
+                  <td width="15" height="39"></td>
+                  <td height="39"><input maxlength="25" size="25" name="txtCName" type="text"></td>
+                </tr>
+                <tr>
+                  <td height="1" colspan="4" background="/2007/images/longline.gif" bgcolor="F6F6F8"></td>
+                </tr>
+                <tr>
+                  <td width="15" height="39" bgcolor="F6F6F8"></td>
+                  <td width="126" height="39" bgcolor="F6F6F8">사업자번호</td>
+                  <td width="15" height="39"></td>
+                  <td height="39"><input maxlength="10" size="10" name="txtCNum" type="text" onkeypress="javascript: onlyNumber();"> &nbsp;<font color="#FF3300">세금 계산서 발행</font>을 위해, '-'을 제외하고 
+                              숫자만 입력하세요. </td>
+                </tr>
+                <tr>
+                  <td height="1" colspan="4" background="/2007/images/longline.gif" bgcolor="F6F6F8"></td>
+                </tr>
+                <tr>
+                  <td width="15" height="90" rowspan="3" bgcolor="F6F6F8"></td>
+                  <td width="126" height="90" rowspan="3" bgcolor="F6F6F8">주소<font color="f36d21">*</font></td>
+                  <td width="15" height="90" rowspan="3"></td>
+                  <td height="30">
+                             <input class="font_01" maxlength="3" size="4" name="txtZip1" type="text">
+                              -
+                  <input class="font_01" maxlength="3" size="4" name="txtZip2" type="text">
+                  <a href="JavaScript:openDaumPostcode()"><img src="./img/member02_bt4.jpg" width="86" height="21" border="0" align="absmiddle"></a> 
+                  
+                                    
+                   </td>
+                </tr>
+                <tr>
+                  <td height="30"><input class="font_01" maxlength="50" size="60" name="txtAddr1" type="text"></td>
+                </tr>
+                <tr>
+                  <td height="30"><input class="font_01" maxlength="50" size="60" name="txtAddr2" type="text"></td>
+                </tr>
+                <tr>
+                  <td height="1" colspan="4" background="/2007/images/longline.gif" bgcolor="F6F6F8"></td>
+                </tr>
+                <tr>
+                  <td width="15" height="39" bgcolor="F6F6F8"></td>
+                  <td width="126" height="39" bgcolor="F6F6F8">고객생일<font color="f36d21">*</font></td>
+                  <td width="15" height="39"></td>
+                  <td height="39"><table border="0" cellspacing="0" cellpadding="0">
+                        <tbody><tr>
+                          <td>
+                            <input class="font_01" maxlength="4" size="10" name="txtBirthY" type="text" onkeypress="javascript: onlyNumber();">
+                              년 
+                              <input class="font_01" maxlength="2" size="10" name="txtBirthM" type="text" onkeypress="javascript: onlyNumber();">
+                              월 
+                              <input class="font_01" maxlength="2" size="10" name="txtBirthD" type="text" onkeypress="javascript: onlyNumber();">
+                              일 
+                             
+                              
+                          </td>
+                          <td width="20">&nbsp;</td>
+                          <td> <input type="radio" name="rdoLunar" value="N" checked="">
+                              양력 
+                              <input type="radio" name="rdoLunar" value="Y">
+                              음력
+                          </td>
+                        </tr>
+                      </tbody></table></td>
+                </tr>
+                <tr>
+                  <td height="1" colspan="4" background="/2007/images/longline.gif" bgcolor="F6F6F8"></td>
+                </tr>
+                <tr>
+                  <td width="15" height="39" bgcolor="F6F6F8"></td>
+                  <td width="126" height="39" bgcolor="F6F6F8">메일수신여부<font color="f36d21">*</font></td>
+                  <td width="15" height="39"></td>
+                  <td height="39">
+                      <input type="radio" name="rdoRcv" value="Y" checked="">
+                              예 
+                              <input type="radio" name="rdoRcv" value="N">
+                              아니요
+                  </td>
+                </tr>
+                <tr>
+                  <td height="1" colspan="4" background="/2007/images/longline.gif" bgcolor="F6F6F8"></td>
+                </tr>
+                <tr>
+                  <td width="15" height="39" bgcolor="F6F6F8"></td>
+                  <td width="126" height="39" bgcolor="F6F6F8">업종선택<font color="f36d21">*</font></td>
+                  <td width="15" height="39"></td>
+                  <td height="39">
+                      <select name="biz_s" onchange="bizck()">
+                        <option value="">선택하세요</option>
+                        <option value="한식">        한식</option>
+                        <option value="중식">        중식</option> 
+                        <option value="공인중계업">  공인중계업</option>
+                        <option value="치킨">        치킨</option>
+                        <option value="피자">        피자</option>
+                        <option value="택배">        택배</option>
+                        <option value="이사">        이사</option>
+                        <option value="서점">        서점</option>
+                        <option value="야식">        야식</option>
+                        <option value="용달">        용달</option>
+                        <option value="꽃배달">      꽃배달</option>
+                        <option value="퀵서버스">    퀵서버스</option>
+                        <option value="제과점">      제과점</option>
+                        <option value="주류판매">    주류판매</option>
+                        <option value="의류">        의류</option>
+                        <option value="패스트푸드">  패스트푸드</option>
+                        <option value="편의점">      편의점</option>
+                        <option value="마트">        마트</option>
+                        <option value="과일">        과일</option>
+                        <option value="도서대여">    도서대여</option>
+                        <option value="핸드폰">      핸드폰</option>
+                        <option value="학원">        학원</option>
+                        <option value="스포츠센터">  스포츠센터</option>
+                        <option value="헤어">      헤어</option>
+                        <option value="네일">      네일</option>
+                        <option value="피부관리">      피부관리</option>
+                        <option value="마사지">      마사지</option>
+                        <option value="체형관리">      체형관리</option>
+                        <option value="왁싱">      왁싱</option>
+                        <option value="속눈썹">      속눈썹</option>
+                        <option value="etc33">        기타</option>
+                      </select>
+                      &nbsp;&nbsp;&nbsp;&nbsp;
+                      <div id="etc" style="display:none;">
+                        * 직접 입력해주세요.&nbsp;&nbsp;<input name="etc1" type="text" style="width:100">
+                      </div>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td height="1" colspan="4" background="/2007/images/longline.gif" bgcolor="F6F6F8"></td>
+                </tr>
+                <tr>
+                  <td width="15" height="39" bgcolor="F6F6F8"></td>
+                  <td width="126" height="39" bgcolor="F6F6F8">사용할 프로그램<font color="f36d21">*</font></td>
+                  <td width="15" height="39"></td>
+                  <td height="39">
+                    
+          <select size="1" name="code_1" class="TEXTAREA">								
+          <option value="">선택하세요</option>
+          
+          <option value="001">도소매/배달/요식업  </option>
+          
+          <option value="002">상담관리프로그램    </option>
+          
+          <option value="004">숙박업프로그램      </option>
+          
+          <option value="005">스포츠쎈터프로그램  </option>
+          
+          <option value="006">원생관리 프로그램   </option>
+          
+          <option value="007">뷰티플러스          </option>
+                      
+          </select>
+      <!--2011-08-02-->		
+           
+      <!--2011-08-02-->		 
+      
+            <!-- 도소매체크박스 //-->
+            <div id="DivCheck" style="display:none;margin-top:10px;margin-bottom:10px;background:#f7f7f7;">
+                <div style="background:#fff">* 아래 항목에 해당하는 경우라면, 해당되는 내용은 모두 체크해주세요~</div>
+                <div style="border-top:1px solid #ddd;">
+                    <div style="float:left;background:#fa6e07;color:#fff;padding:5px;width:120px;text-align:center">배달앱 광고/주문</div>
+                    <div style="float:left;padding:5px;background:#f7f7f7;">
+                        <input type="checkbox" name="AdOrder" id="AdOrder" value="배달의민족">배달의민족
+                        <input type="checkbox" name="AdOrder" id="AdOrder" value="요기요">요기요
+                        <input type="checkbox" name="AdOrder" id="AdOrder" value="배달통">배달통
+                        <input type="checkbox" name="AdOrder" id="AdOrder" value="기타">기타
+                    </div>
+                    <div style="clear:both"></div>
+                </div>
+                
+                <div style="border-top:1px solid #ddd;border-bottom:1px solid #ddd;background:#f7f7f7;">
+                    <div style="float:left;background:#fa6e07;color:#fff;padding:5px;width:120px;text-align:center">이용중인 배달대행</div>
+                    <div style="float:left;padding:5px;">
+                        <input type="checkbox" name="UseBadal" id="UseBadal" value="바로고">바로고
+                        <input type="checkbox" name="UseBadal" id="UseBadal" value="생각대로">생각대로
+                        <input type="checkbox" name="UseBadal" id="UseBadal" value="제트콜">제트콜
+                        <input type="checkbox" name="UseBadal" id="UseBadal" value="달리고">달리고
+                        <input type="checkbox" name="UseBadal" id="UseBadal" value="빨리와">빨리와
+                        <input type="checkbox" name="UseBadal" id="UseBadal" value="모아콜">모아콜<br>
+                        <input type="checkbox" name="UseBadal" id="UseBadal" value="리드콜">리드콜
+                        <input type="checkbox" name="UseBadal" id="UseBadal" value="장군콜">장군콜
+                        <input type="checkbox" name="UseBadal" id="UseBadal" value="와따">와따
+                        <input type="checkbox" name="UseBadal" id="UseBadal" value="배달나라Q">배달나라Q
+                        <input type="checkbox" name="UseBadal" id="UseBadal" value="전국배달대행연합">전국배달대행연합<br>
+                        <input type="checkbox" name="UseBadal" id="UseBadal" value="기타">기타
+                    </div>
+                    <div style="clear:both"></div>
+                </div>
+                
+                <!--div style="border-bottom:1px solid #ddd;background:#f7f7f7;">
+                    <div style="float:left;background:#34354e;color:#fff;padding:5px;width:120px;text-align:center">포스피드사용</div>
+                    <div style="float:left;padding:5px;">
+                        <div>
+                            <div style="float:left">
+                              <input type="radio" name="IsPospeed" id="IsPospeed" value="Y">예
+                              <input type="radio" name="IsPospeed" id="IsPospeed" value="N">아니오
+                            </div>
+                            <div style="float:right"><a href="javascript:goPoSpeed()"><u style="color:green">√ 포스피드가 궁금하시면 클릭하세요</u></a></div>
+                            <div style="clear:both"></div>
+                        </div>
+                        <div>* 포스피드 서비스(배달대행연동)를 사용하실 분은<br>
+                        &nbsp;&nbsp;&nbsp;반드시 <b>"예"</b>를 체크해주세요.</div>
+                    </div>
+                    <div style="clear:both"></div>
+                    
+                </div//-->
+                
+                
+                
+            </div>
+            
+                  
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td height="1" colspan="4" background="/2007/images/longline.gif" bgcolor="F6F6F8"></td>
+                </tr>
+                
+                <!--tr>
+                  <td width="15" height="39" bgcolor="F6F6F8"></td>
+                  <td width="126" height="39" bgcolor="F6F6F8">관심항목<font color="f36d21">*</font></td>
+                  <td width="15" height="39"></td>
+                  <td height="39">
+                     <input type="checkbox" name="f_changup" value="프로그램" >
+                              프로그램&nbsp;
+           <input type="checkbox" name="f_changup" value="창업">
+             창업
+                  </td>
+                </tr//-->
+                <tr>
+                  <td height="1" colspan="4" background="/2007/images/longline.gif" bgcolor="F6F6F8"></td>
+                </tr>
+                 <tr>
+                  <td width="15" height="39" bgcolor="F6F6F8"></td>
+                  <td width="126" height="39" bgcolor="F6F6F8">콜신져 사용시간<font color="f36d21">*</font></td>
+                  <td width="15" height="39"></td>
+                  <td height="39" style="color:#000000">
+                       새벽 3시부터 아침 8시 사이에도 사용하십니까?
+                       <input type="radio" name="txtUsingTime" value="Y"><font color="red">예</font> <input type="radio" name="txtUsingTime" value="N" checked=""><font color="darkgreen">아니오</font>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td height="1" colspan="4" background="/2007/images/longline.gif" bgcolor="F6F6F8"></td>
+                </tr>
+                <tr>
+                  <td width="15" height="39" bgcolor="F6F6F8"></td>
+                  <td width="126" height="39" bgcolor="F6F6F8"><font color="#FF0000"><b>추천아이디</b></font></td>
+                  <td width="15" height="39"></td>
+                  <td height="39">
+                          
+            <input class="font_01" style="BORDER-RIGHT: #a1a1a1 1px solid; BORDER-TOP: #a1a1a1 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: #a1a1a1 1px solid; WIDTH: 120px; COLOR: #666666; BORDER-BOTTOM: #a1a1a1 1px solid; FONT-FAMILY: gulim; HEIGHT: 20px" type="hidden" name="RecommendID" value="ca">
+            
+            <input class="font_01" style="BORDER-RIGHT: #a1a1a1 1px solid; BORDER-TOP: #a1a1a1 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: #a1a1a1 1px solid; WIDTH: 120px; COLOR: #666666; BORDER-BOTTOM: #a1a1a1 1px solid; FONT-FAMILY: gulim; HEIGHT: 20px" name="txtRecomID" type="text" value="ca" size="12" maxlength="12">
+            
+                  
+                    콜신져를 소개해주신 분의 아이디를 적어주세요. </td>
+                </tr>
+                
+                <tr>
+                  <td height="2" bgcolor="D6D6D6"></td>
+                  <td height="2" bgcolor="D6D6D6"></td>
+                  <td height="2" bgcolor="D6D6D6"></td>
+                  <td height="2" bgcolor="D6D6D6"></td>
+                </tr>
+      
+              </tbody></table></td>
+              <td width="50" height="22"></td>
+            </tr>
+            <tr>
+              <td width="50" height="26"></td>
+              <td width="668" height="26"></td>
+              <td width="50" height="26"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td align="center"><table border="0" cellspacing="0" cellpadding="0">
+                <tbody><tr>
+                  <!--td><a href = "javascript:frmJoin.reset();"><img src="./img/member02_bt2.jpg" width="61" height="21" border=0></a></td//-->
+                  <!--td width="20">&nbsp;</td//-->
+                  <td>
+                      <button type="button" style="border:1px solid #0c9ae4;background:#0c9ae4;color:#fff;font-size:14px;border-radius:10px;padding:10px;font-size:16px;font-weight:bold;" onclick="chkDat();">
+                        콜신져회원 가입하기
+                      </button>
+                      
+                  </td>
+                  
+                  
+                </tr>
+              </tbody></table></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td width="50" height="17"></td>
+              <td width="668" height="17"></td>
+              <td width="50" height="17"></td>
+            </tr>
+          </tbody></table></td>
+          <td height="500" bgcolor="#99D5F9"></td>
+        </tr>
+        <tr>
+          <td width="1" height="2" bgcolor="39ADF3"></td>
+          <td width="768" height="2" bgcolor="39ADF3"></td>
+          <td width="1" height="2" bgcolor="39ADF3"></td>
+        </tr>
+        <tr>
+          <td width="1" height="14"></td>
+          <td width="768" height="14"></td>
+          <td width="1" height="14"></td>
+        </tr>
+        <tr>
+          <td width="1"></td>
+          <td width="768" align="center"><img src="./img/admin01_10.jpg"></td>
+          <td width="1"></td>
+        </tr>
+        <tr>
+          <td width="1" height="15"></td>
+          <td width="768" height="15"></td>
+          <td width="1" height="15"></td>
+        </tr>
+        
+      </tbody></table>
+      
+      <map name="Map">
+      <area shape="rect" coords="6,1,42,12" href="http://www.okcallme.com/2007/">
+      <area shape="rect" coords="52,1,105,11" href="http://www.okcallme.com/2007/subDivide.ccomi?PG_CODE=810">
+      </map>
+      
+      
+      
+      
+      
+      
+      <script language="javascript">
+
+
+    
+        var f = document.frmJoin;
+        function bizck()
+        { 
+            if (f.biz_s.value=="etc33")
+            {
+              document.all.etc.style.display='';
+            }
+            else
+            {
+              document.all.etc.style.display='none';
+            }
+            
+        }
+        
+        //도소매선택시에만 체크박스가 열린다.
+        function goViewCheck(vu) {
+            
+            if(vu=="001") {
+                $("#DivCheck").css("display","");
+            } else {
+                $("#DivCheck").css("display","none");
+            }	
+          
+         }
+         
+         var PopSpeed;
+         function goPoSpeed() {
+              
+              PopSpeed=window.open('http://www.okcallme.com/2007/subDivide.ccomi?PG_CODE=B10','PopSpeed');	
+           window.PopSpeed.focus();
+          
+         }
+      
+        function chkDat() {
+          var f = document.frmJoin;
+          
+          if (f.txtName.value.length == 0)      { alert("이름을 입력해 주세요."); f.txtName.focus(); return; }
+          if (f.txtID.value.length == 0)        { alert("아이디를 입력해 주세요."); f.txtID.focus(); return; }
+          if (f.txtID.value.length > 0) {
+          if (checkSpecialChar(f.txtID.value) == false) { alert("허용되지 않은 문자가 있습니다.\n\n숫자와 영문 소문자만으로 아이디를 구성해 주세요."); f.txtID.focus(); return; }
+          }
+          if (f.txtID.value.length < 6)        { alert("아이디는 6자이상 입력해 주세요."); f.chkID.value == 'N'; f.txtID.focus(); return; }
+          if (f.txtPassword.value.length == 0)  { alert("비밀번호를 입력해 주세요."); f.txtPassword.focus(); return; }
+          if (f.txtPassword.value != f.txtConfirm.value) {
+            alert("입력하신 비밀번호가 일치하지 않습니다.\n\n비밀번호를 다시 입력해 주세요.");
+            f.txtPassword.value = "";
+            f.txtConfirm.value = "";
+            f.txtPassword.focus();
+            return;
+          }
+          if (f.txtConfirm.value.length == 0)   { alert("비밀번호 확인을 위해 한번 더 입력해 주세요."); f.txtConfirm.focus(); return; }
+          if (f.txtPasskey.value == '') { alert("비밀번호 변경질문을 선택해 주세요."); f.txtPasskey.focus(); return; }
+          if (f.txtPasschk.value.length == 0)     { alert("비밀번호 변경답을 입력해 주세요."); f.txtPasschk.focus(); return; }
+          if (f.txtEmail.value.length == 0)     { alert("이메일 주소를 입력해 주세요."); f.txtEmail.focus(); return; }
+          if (f.txtTel1.value.length == 0)      { alert("전화번호를 입력해 주세요."); f.txtTel1.focus(); return; }
+          if (f.txtTel2.value.length == 0)      { alert("전화번호를 입력해 주세요."); f.txtTel2.focus(); return; }
+          if (f.txtTel3.value.length == 0)      { alert("전화번호를 입력해 주세요."); f.txtTel3.focus(); return; }
+          if (f.txtHP1.value.length == 0)       { alert("휴대폰 번호를 입력해 주세요."); f.txtHP1.focus(); return; }
+          if (f.txtHP2.value.length == 0)       { alert("휴대폰 번호를 입력해 주세요."); f.txtHP2.focus(); return; }
+          if (f.txtHP3.value.length == 0)       { alert("휴대폰 번호를 입력해 주세요."); f.txtHP3.focus(); return; }
+          if (f.txtZip1.value.length == 0)      { alert("주소를 입력해 주세요."); f.txtZip1.focus(); return; }
+          if (f.txtAddr2.value.length == 0)     { alert("상세주소를  입력해 주세요."); f.txtAddr2.focus(); return; }
+          if (f.biz_s.value == '') { alert("업종을 선택해 주세요."); f.biz_s.focus(); return; } 
+          //if (f.biz_s.value=="etc" && f.etc1.value=='') { alert("업종을 꼭 써주세요."); f.etc1.focus(); return; }    
+          if (f.code_1.value.length == 0)	{ alert("사용하실 프로그램을 선택하여 주세요"); f.code_1.focus(); return; }
+          if (f.chkID.value == 'N') { alert("아이디 중복 체크를 해 주세요."); f.txtID.focus(); return; }
+          if (f.txtUsingTime[0].checked==false && f.txtUsingTime[1].checked==false) { alert("콜신져 사용시간대를 선택해주세요."); f.txtUsingTime[0].focus(); return; }
+          if (f.txtID.value == f.txtRecomID.value) { alert("추천인 아이디로 자신을 지정할 수 없습니다."); f.txtRecomID.focus(); return; }
+               
+          
+          if (f.code_1.value != ''){ 
+                
+            confirm_code1();
+            
+          }
+      
+        }
+      
+      
+      
+      function confirm_code1(){
+      
+          code_name = f.code_1.value;
+          
+          //switch(code_name){
+        
+          //case 1:
+          
+          //code_re_name = "고객관리 프로그램"
+          
+          //case 2:
+          
+          //code_re_name = "상담관리 프로그램"
+      
+          //case 3:
+          
+          //code_re_name = "꽃배달 프로그램"
+          
+          
+          //break;
+        
+        //}
+      
+      
+        
+        if (confirm("사용하실 프로그램을\n\n 정확히 선택하셨습니까?"))
+        {
+          
+          f.action = "/2007/member/join.proc.asp";
+          f.submit();
+        }
+        else
+        {
+          f.code_1.focus();
+          return;
+        }
+        
+        
+        
+      }
+      
+      
+       // function onlyNumber() { if((event.keyCode < 48)||(event.keyCode > 57)) event.returnValue=false; }
+      
+      //이메일 특수문자 및 한글문자 체크//
+      
+      function email_char(){
+      
+      
+           if(f.email_part.value=="AUTO"){
+      
+        //var m_Sp = /[$\\@\\\#%\^\&\*\(\)\[\]\+\_\{\}\`\~\=\!\|]/;
+        var m_Sp = /[@]/;
+        
+        }
+        
+        if(f.email_part.value=="NORMAL"){
+        
+        //var m_Sp = /[\$\\#%\^\&\*\(\)\[\]\+\_\{\}\`\~\=\!\|]/;
+        var m_Sp = /[@]/;
+      
+        
+        }
+        
+          
+        var m_val = f.txtEmail.value;
+        var strLen = m_val.length;
+        var m_char = m_val.charAt((strLen) - 1);
+        
+      
+        if(f.email_part.value=="AUTO"){
+      
+            if(m_char.search(m_Sp) != -1) {
+              alert("@를 제외한 메일을 입력해주세요.");
+              f.txtEmail.value ="";
+              f.txtEmail.focus();
+              return;
+            }
+            //else{
+            
+                  
+            //var strText = f.txtEmail.value;
+            
+              
+            //var comp = "0123456789abcdefghijklmnopqrstuvwxyz";
+              //var len = strText.length;
+              //for(i = 0; i < len; i++)
+              //{
+              //  if(comp.indexOf(strText.substring(i, i + 1)) < 0)
+              //  {
+              //  	alert("이메일주소는 영문으로만 입력해주세요.");
+              //    f.txtEmail.value ="";
+            //	f.txtEmail.focus();
+            //	return;
+              //  }
+              //}
+      
+            //}
+            
+        }
+        
+        else{
+                    
+          f.txtEmail.focus();
+          
+          
+          //if(m_char.search(m_Sp) != -1) {
+          //		alert("@를 제외한 메일을 입력해주세요.");
+          //		f.txtEmail.value ="";
+          //		f.txtEmail.focus();
+          //		return;
+          //	}
+            //else{
+            
+            //var strText = f.txtEmail.value;
+            
+              
+            //var comp = "0123456789abcdefghijklmnopqrstuvwxyz@.";
+              //var len = strText.length;
+              //for(i = 0; i < len; i++)
+              //{
+              //  if(comp.indexOf(strText.substring(i, i + 1)) < 0)
+              //  {
+              //  	alert("이메일주소는 영문으로만 입력해주세요.");
+              //    f.txtEmail.value ="";
+            //	f.txtEmail.focus();
+            //	return;
+              //  }
+              //}
+      
+            //}
+      
+          
+        
+        
+        }
+      }
+      
+      
+      
+      function onlyNumber() {
+        var keyCode = window.event.keyCode;
+        if ((keyCode < 48) || (keyCode > 57)){
+          event.returnValue=false;
+          alert('숫자만 입력해 주세요');
+        }
+         }
+      
+      
+      
+        function checkSpecialChar(strText)
+        {
+          var comp = "0123456789abcdefghijklmnopqrstuvwxyz";
+          var len = strText.length;
+          for(i = 0; i < len; i++)
+          {
+            if(comp.indexOf(strText.substring(i, i + 1)) < 0)
+            {
+              return false;
+            }
+          }
+        }
+      
+        function setBirth()
+        {
+          var f = document.frmJoin;
+      
+          var nYear = ""; var nMonth = ""; var nDay = "";
+      
+          if (f.txtSSN1.value.length == 6) {
+            nYear = f.txtSSN1.value.substring(0, 2);
+            nMonth = f.txtSSN1.value.substring(2, 4);
+            nDay = f.txtSSN1.value.substring(4, 6);
+          }
+      
+          if (nYear.substring(0, 1) == "0") { nYear = "20" + nYear; }
+          else { nYear = "19" + nYear; }
+      
+          f.txtBirthY.value = nYear;
+          f.txtBirthM.value = nMonth;
+          f.txtBirthD.value = nDay;
+      
+          if (f.txtSSN1.value.length >= 6)
+            f.txtSSN2.focus();
+        }
+      
+        function checkSSN() //주민등록번호 체크
+        {   
+          var chk =0;   
+      
+          txtSSN1 = document.frmJoin.txtSSN1;
+          txtSSN2 = document.frmJoin.txtSSN2;
+      
+          var yy  = txtSSN1.value.substring(0,2);   
+          var mm  = txtSSN1.value.substring(2,4);   
+          var dd  = txtSSN1.value.substring(4,6);   
+          var sex = txtSSN2.value.substring(0,1);   
+      
+          if (txtSSN2.value.split(" ").join("") == "")
+          {   
+            txtSSN1.focus(); return false;
+          }   
+      
+          if (txtSSN1.value.length!=6)   
+          {   
+            txtSSN1.focus(); return false;
+          }   
+      
+          if (txtSSN2.value.length != 7 )   
+          {   
+            txtSSN2.focus(); return false;
+          }   
+      
+          if (isNaN(txtSSN1.value) || isNaN(txtSSN2.value))   
+          {   
+            txtSSN1.value = ""; txtSSN2.value = ""; return false;
+          }   
+      
+          if ((txtSSN1.value.length!=6) || (mm <1||mm>12||dd<1))
+          {   
+            txtSSN1.value = ""; return false;   
+          }   
+      
+          if ((sex != 1 && sex !=2 ) || (txtSSN2.value.length != 7 )){   
+            txtSSN2.value = ""; return false;   
+          }   
+      
+          for (var i = 0; i <= 5 ; i++)
+          {   
+            chk = chk + ((i % 8 + 2) * parseInt(txtSSN1.value.substring(i, i + 1)))   
+          }   
+      
+          for (var i = 6; i <= 11 ; i++)
+          {
+            chk = chk + ((i % 8 + 2) * parseInt(txtSSN2.value.substring(i - 6, i - 5)))   
+          }   
+      
+          chk = 11 - (chk % 11)   
+          chk = chk % 10   
+      
+          if (chk != txtSSN2.value.substring(6, 7))   
+          {   
+            txtSSN1.focus(); return false;
+          }
+        }
+      
+        function chkID() {
+      
+          var txtID = document.frmJoin.txtID.value;
+        //아이디 특수문자 필터링
+        var permission = "0123456789abcdefghijklmnopqrstuvwxyz";
+        for(i=0;i < txtID.length ;i++)
+        {
+            if(permission.indexOf(txtID.substring(i,i+1)) < 0)
+            {
+                alert("허용되지 않은 문자가 있습니다.\n\n숫자와 영문 소문자만으로 아이디를 구성해 주세요.");
+            document.frmJoin.txtID.value="";
+            document.frmJoin.txtID.focus();
+            return;
+            }
+        }	
+      
+          if (txtID.length < 6) { alert("중복체크할 아이디를 입력하세요."); document.frmJoin.txtID.focus(); }
+          else { window.open("/2007/member/check.ID.asp?id=" + txtID, "아이디중복체크", "width=405,height=310,resizable=no,scrollbars=no"); }
+        }
+      
+        function searchZip() {
+          window.open("/2007/member/search.zipcode.asp", "주소찾기", "width=400,height=305,resizable=no,scrollbars=no");
+        }
+      
+        function nextTab() {
+          if (document.frmJoin.txtSSN1.value.length == 6) document.frmJoin.txtSSN2.focus();
+        }
+      
+        function selMail() {
+          var selValue = document.frmJoin.selDomain[document.frmJoin.selDomain.selectedIndex].value;
+      
+          if (selValue == "X") {
+            //window.open("/member/email.domain.asp", "email", "width=360,height=250,resizable=no,scrollbars=no");
+            
+            document.all.dEmail.style.display="none";
+            f.email_part.value = "";
+            f.email_part.value = "NORMAL";
+            f.txtEmail.focus();
+            
+            return;
+      
+          
+          }
+          else
+          {
+            document.all.dEmail.style.display='';
+          }
+        }
+      
+      
+        //window.onload = not_mouse;
+        
+        //function not_mouse() {
+        
+        //	if (event.button==2) {
+        //	alert('죄송합니다, 오른쪽 버튼은 쓰실 수 없습니다');
+        //	}
+        //}
+        //document.onmousedown=click
+        
+      
+    
+      </script>
+      
+      
+      
+      <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script><script charset="UTF-8" type="text/javascript" src="//t1.daumcdn.net/postcode/api/core/210514/1620968773832/210514.js"></script>
+      <script>
+          function openDaumPostcode() {
+              new daum.Postcode({
+                  oncomplete: function(data) {
+                      // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+                      // 우편번호와 주소 정보를 해당 필드에 넣고, 커서를 상세주소 필드로 이동한다.
+                      
+                      var fullAddr = ''; // 최종 주소 변수
+                      var extraAddr = ''; // 조합형 주소 변수
+                      
+                      // 사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+                      if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+                          fullAddr = data.roadAddress;
+      
+                      } else { // 사용자가 지번 주소를 선택했을 경우(J)
+                          fullAddr = data.jibunAddress;
+                      }
+                      
+                       // 사용자가 선택한 주소가 도로명 타입일때 조합한다.
+                      if(data.userSelectedType === 'R'){
+                          //법정동명이 있을 경우 추가한다.
+                          if(data.bname !== ''){
+                              extraAddr += data.bname;
+                          }
+                          // 건물명이 있을 경우 추가한다.
+                          if(data.buildingName !== ''){
+                              extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                          }
+                          // 조합형주소의 유무에 따라 양쪽에 괄호를 추가하여 최종 주소를 만든다.
+                          fullAddr += (extraAddr !== '' ? ' ('+ extraAddr +')' : '');
+                      }
+                      
+                      //구우편번호
+                      f.txtZip1.value = data.postcode1;
+                      f.txtZip2.value = data.postcode2;
+                      
+                      //신우편번호
+                      f.txtZip1.value = data.zonecode.substring(0,3);
+                      f.txtZip2.value = data.zonecode.substring(3,5);
+                      
+                      f.txtAddr1.value = fullAddr;
+                      f.txtAddr2.focus();
+                        
+                      //전체 주소에서 연결 번지 및 ()로 묶여 있는 부가정보를 제거하고자 할 경우,
+                      //아래와 같은 정규식을 사용해도 된다. 정규식은 개발자의 목적에 맞게 수정해서 사용 가능하다.
+                      //var addr = data.address.replace(/(\s|^)\(.+\)$|\S+~\S+/g, '');
+                      //document.getElementById('addr').value = addr;
+      
+                      
+                  }
+              }).open();
+          }
+      </script> 
+      </body>
