@@ -44,6 +44,14 @@ body {
 footer{
     display: none;
 }
+.under-bar{
+    width: 200px;
+    border-bottom: 1px solid #777;
+    opacity: 0.8;
+    margin: 20px 0;
+    text-align: center;
+
+}
 
 /*text*/
 .xl-text{
@@ -400,13 +408,18 @@ header img{
 /*사용방법*/
 
 .test-page{
-    height: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
     width: 100%;
     text-align: center;
 }
 .test-page>.l-text{
     font-size: 1.5em;
     padding: 40px 0 20px 0;
+    line-height: 2em;
 }
 .test-page>.point-text{
     padding-bottom: 30px;
@@ -430,6 +443,9 @@ header img{
     color:#fff;
     font-size: 1.1em;
 }
+.test-page img{
+    width: 90vw;
+}
 .btn img{
     display: none;
 }
@@ -448,6 +464,7 @@ header img{
     width: 85vw;
     margin-bottom: 20px;
     word-break: normal;
+    justify-content: center;
 }
 .sale-info img{
     width: 75vw;
@@ -503,7 +520,7 @@ header img{
 
 .delivery .l-text{
     font-size: 1.5em;
-    padding: 30px 0;
+    padding-top: 30px;
 }
 .delivery-b1, .delivery-b2{
     display: inline-flex;
@@ -555,6 +572,15 @@ header img{
 .delivery-b2 .list{
     width: 80vw;
 }
+.menu3{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+}
+
 
 /*고객센터*/
 .notice-wrapper{

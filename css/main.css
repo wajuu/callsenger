@@ -62,10 +62,10 @@ body {
     width: 100vw;
     height: 92vh;
 }
-.desk-no{
+.desk-no, .test-page .desk-no{
     display: none;
 }
-#desk-no, #desk-no1, #desk-no2{
+#desk-no, #desk-no1, #desk-no2, #desk-no3{
     display: none;
 }
 .arrow{
@@ -77,6 +77,9 @@ body {
     opacity: 0.8;
     margin-bottom: 50px;
     text-align: center;
+}
+.sc-img{
+    opacity: 0;
 }
 /*text*/
 .xl-text{
@@ -107,10 +110,10 @@ body {
 }
 /*header*/
 
-#header{
+header{
     position: fixed;
     width: 100vw;
-    height: 90px;
+    height: 60px;
     background-color: #fff;
     border-bottom: 1px solid #dedede;
     box-shadow: 0 0 5px 0 #dedede;
@@ -254,16 +257,17 @@ body {
 }
 #home-1{
     width: 100vw;
-    height: calc(100vh - 66px);
+    height: calc(100vh - 70px);
     position: relative;
     text-align: center;
     z-index: 0;
+    padding-top: 70px;
 }
 #home-1::after{
     width: 100vw;
-    height: calc(100vh - 66px);
+    height: calc(100vh - 60px);
     position: absolute;
-    top: 0;
+    top: 60px;
     left: 0;
     background: url(../img/AdobeStock_339830462.jpeg);
     background-size: cover;
@@ -279,13 +283,20 @@ body {
     align-items: center;
 }
 .hello{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 35vw;
-    height: 31.4h;
+    height: calc(100vh - 70px);
     text-align: center;
-    padding-top: 6vh;
 }
 .hello-box{
+    display: inline-flex;
+    justify-content: center;
     margin-top: 5vh;
+    width: 500px;
+    padding: 20px 30px 20px 0;
 }
 .hello .s-text-w{
     padding-top: 0.8vw;
@@ -296,20 +307,29 @@ body {
     padding-bottom: 0.8vw;
     border-bottom: 0.1vw solid white;
     display: inline-block;
+    padding-top: 40px;
 }
 .event{
     opacity: 0.8;
-    display: inline-block;
-    width: 70%;
-    padding: 2.4vh 0.5vw 2vh 0.5vw;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 70px;
+    padding: 20px 30px;
     background-color: white;
     border: 0.3vw dotted #448aca;
 }
+.event-text{
+    width: 320px;
+    height: 40px;
+}
 .hello img{
     transform:rotate(-10deg);
-    width: 9.4vw;
-    display: flex;
-    position: relative; bottom: 15vh; left: 3.1vw;
+    width: 150px;
+    position: absolute; 
+    left: 12vw;
+    top: 53vh;
 }
 .select-menu{
     display:inline-flex;
@@ -455,7 +475,8 @@ body {
     float: left;
 }
 .menu1-1{
-    height: 100vh;
+    height: calc(100vh - 70px);
+    padding-top: 70px;
 }
 .menu1 .background{
     display: inline-block;
@@ -521,10 +542,12 @@ body {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 70px;
+    padding: 70px 0;
+    width: 100vw;
 }
 .test-page>.l-text{
     padding: 70px 0 40px 0;
+    line-height: 1.5em;
 }
 .test-page>.point-text{
     padding-bottom: 60px;
@@ -571,9 +594,27 @@ body {
 }
 .test-page .menu3{
     padding-top: 70px;
+
 }
+.test-page img{
+    width: 40vw;
+}
+.menu3{
+    width: 100vw;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+
+}
+
 .menu3 .l-text{
     padding-bottom: 50px;
+}
+.menu3 .map{
+    width: 300px;
+    height: auto;
 }
 
 /*제휴사*/
@@ -914,9 +955,9 @@ body {
 .sale-banner img{
     width: 10vw;
     display: flex;
-    position: fixed; 
+    position: absolute; 
     top: 11%;
-    left: 6%;
+    left: 8%;
     z-index: 2;
 }
 
