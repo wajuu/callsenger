@@ -126,7 +126,7 @@
                         <div class="mobile-no hello-box">
                             <a href="./2-1.html">
                                 <div class="m-text event" id="event">1년에 2-3명만 추천하면<br>평생 무료 사용도 가능!!</div>
-                                <img src="./img/events.png" alt="events">
+                                <div class="event-text"><img src="./img/events.png" alt="events"></div>
                             </a>
                         </div>
                     </td>
@@ -164,11 +164,11 @@
 
         </div>
         <div class="main-2">
-            <div class="definition">
+            <div class="definition sc-img">
                 <h2 class="m-text">콜신져는 무엇인가요?</h2>
                 <h3 class="s-text">요식업 + 배달매장을 오픈했다면 반드시 사용해야하는 POS + 고객관리 프로그램</h3>
             </div>
-            <div class="definition-box">
+            <div class="definition-box sc-img">
                 <div class="recom-pic">
                     <ul class="recom">
                         <li><img src="./img/delivery.png" alt="delivery"></li>
@@ -189,7 +189,7 @@
 
                 <div class="recom-pic2 mobile-no">
                     <table>
-                        <tr class="block block1">
+                        <tr class="block block1 sc-img">
                             <td class="img">
                                 <img class="recom-img" src="./img/definition1.png" alt="details">
                             </td>
@@ -198,7 +198,7 @@
                                 <p class="s-text">배민,요기요,위메프오 배달앱 주문이<br>콜신져에 자동접수됩니다.</p>
                             </td>
                         </tr>
-                        <tr class="block block2">
+                        <tr class="block block2 sc-img">
                             <td class="img">
                                 <img class="recom-img" src="./img/definition2.png" alt="details">
                             </td>
@@ -233,7 +233,7 @@
         </div>
 
         <div class="main-3" id="main-3">
-            <table class="functions" id="functions">
+            <table class="functions sc-img" id="functions">
                 <tr>
                     <td class="blank"></td>
                     <td class="text point-text">이 모든 것을 콜신져 하나로</td>
@@ -289,7 +289,7 @@
             </table>
         </div>
         <div class="main-4" id="main-4">
-            <table class="connect-shop">
+            <table class="connect-shop sc-img">
                 <tr>
                     <td>
                         <h3 class="m-text">콜신져와 함께하는 배달대행업체</h3>
@@ -380,8 +380,26 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script>
         function openLogin() {
-            var popup = window.open('login.html', '로그인', 'width=350px,height=350px,scrollbars=no');
+            var popup = window.open('login.html', '로그인', 'width=900px,height=500px,scrollbars=no');
         }
+    </script>
+    <!-- 스크롤이미지 -->
+    <script>
+        $(document).ready(function() {
+$(window).scroll( function(){
+        
+    $('.sc-img').each( function(i){
+        
+        var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 3; //이미지 표시되는 위치 지정
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+        
+        if( bottom_of_window > bottom_of_element ){
+            $(this).animate({'opacity':'1'},700); //이미지 나타나는 속도 조절
+        }
+        
+    }); 
+});
+});
     </script>
 
     <!-- footer -->
