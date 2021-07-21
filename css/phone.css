@@ -95,7 +95,7 @@ footer{
 }
 .menu_btn{
     text-align: right;
-    padding: 15px;
+    padding: 20px;
 }
 .logo a{
     float: left;
@@ -108,8 +108,9 @@ footer{
     display: none;
 }
 .sidebar_menu{
+    opacity: 0.95;
     display: none;
-    width: 50%;
+    width: 100%;
     height: 100vh;
     background: #cde3f7;
     position: absolute;
@@ -119,7 +120,7 @@ footer{
 }
 .close_btn{
     width: 25px;
-    height: 36px;
+    height: 50px;
     margin: 10px;
 }
 .close_btn > a{
