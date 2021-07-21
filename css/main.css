@@ -140,7 +140,6 @@ header{
     height: 60px;
     float: left;
     padding: 5px 10px;
-    margin-right: 2vw;
     width: 65%;
 }
 .nav-login{
@@ -419,6 +418,9 @@ header{
     padding: 30px 0;
     height: 23.6vw;
     display: inline-block;
+}
+#main-3 .desk-no{
+    display: none;
 }
 
 .functions{
