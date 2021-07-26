@@ -968,6 +968,7 @@ header{
     position:fixed; bottom: 5%; right: 0.8vw; font-size: 1.1vw;
 }
 #scroll-group{
+    text-align: center;
     bottom: 35%;
 }
 .scroll {
@@ -1007,23 +1008,13 @@ header{
 }
 #hidden-scroll{
     display: none;
-    opacity: 0;
 }
 #hidden-scroll a{
     color: white; 
 }
 
-#scroll3:hover #hidden-scroll{
-    transition-property: opacity;
-    transition-duration: 1s;
-    display: block;
-    opacity: 1;
-}
 #scroll3:hover>a{
     color: #448aca;
-}
-.rest{
-    padding-top: 0.4vw;
 }
 
 
